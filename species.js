@@ -20,7 +20,7 @@ const SPECIES = [
     "safety": "",
     "id": 1,
     "slug": "african_elephant",
-    "image": "images/001_african_elephant.jpg",
+    "image": "images/001_african_elephant.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -50,7 +50,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 2,
     "slug": "african_buffalo",
-    "image": "images/002_african_buffalo.jpg",
+    "image": "images/002_african_buffalo.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -80,7 +80,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 3,
     "slug": "lion",
-    "image": "images/003_lion.jpg",
+    "image": "images/003_lion.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -110,7 +110,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 4,
     "slug": "leopard",
-    "image": "images/004_leopard.jpg",
+    "image": "images/004_leopard.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -139,7 +139,7 @@ const SPECIES = [
     "safety": "",
     "id": 5,
     "slug": "cheetah",
-    "image": "images/005_cheetah.jpg",
+    "image": "images/005_cheetah.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -168,7 +168,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 6,
     "slug": "african_wild_dog",
-    "image": "images/006_african_wild_dog.jpg",
+    "image": "images/006_african_wild_dog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -198,7 +198,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 7,
     "slug": "spotted_hyena",
-    "image": "images/007_spotted_hyena.jpg",
+    "image": "images/007_spotted_hyena.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -226,7 +226,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 8,
     "slug": "brown_hyena",
-    "image": "images/008_brown_hyena.jpg",
+    "image": "images/008_brown_hyena.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -256,7 +256,7 @@ const SPECIES = [
     "safety": "",
     "id": 9,
     "slug": "giraffe",
-    "image": "images/009_giraffe.jpg",
+    "image": "images/009_giraffe.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -286,7 +286,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 10,
     "slug": "common_hippopotamus",
-    "image": "images/010_common_hippopotamus.jpg",
+    "image": "images/010_common_hippopotamus.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -316,7 +316,7 @@ const SPECIES = [
     "safety": "",
     "id": 11,
     "slug": "common_warthog",
-    "image": "images/011_common_warthog.jpg",
+    "image": "images/011_common_warthog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -346,7 +346,7 @@ const SPECIES = [
     "safety": "",
     "id": 12,
     "slug": "common_eland",
-    "image": "images/012_common_eland.jpg",
+    "image": "images/012_common_eland.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -376,7 +376,7 @@ const SPECIES = [
     "safety": "",
     "id": 13,
     "slug": "greater_kudu",
-    "image": "images/013_greater_kudu.jpg",
+    "image": "images/013_greater_kudu.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -406,7 +406,7 @@ const SPECIES = [
     "safety": "",
     "id": 14,
     "slug": "waterbuck",
-    "image": "images/014_waterbuck.jpg",
+    "image": "images/014_waterbuck.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -435,7 +435,7 @@ const SPECIES = [
     "safety": "",
     "id": 15,
     "slug": "red_lechwe",
-    "image": "images/015_red_lechwe.jpg",
+    "image": "images/015_red_lechwe.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -464,7 +464,7 @@ const SPECIES = [
     "safety": "",
     "id": 16,
     "slug": "tsessebe",
-    "image": "images/016_tsessebe.jpg",
+    "image": "images/016_tsessebe.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -494,7 +494,7 @@ const SPECIES = [
     "safety": "",
     "id": 17,
     "slug": "impala",
-    "image": "images/017_impala.jpg",
+    "image": "images/017_impala.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -524,7 +524,7 @@ const SPECIES = [
     "safety": "",
     "id": 18,
     "slug": "common_duiker",
-    "image": "images/018_common_duiker.jpg",
+    "image": "images/018_common_duiker.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -554,7 +554,7 @@ const SPECIES = [
     "safety": "",
     "id": 19,
     "slug": "steenbok",
-    "image": "images/019_steenbok.jpg",
+    "image": "images/019_steenbok.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -584,7 +584,7 @@ const SPECIES = [
     "safety": "",
     "id": 20,
     "slug": "southern_reedbuck",
-    "image": "images/020_southern_reedbuck.jpg",
+    "image": "images/020_southern_reedbuck.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -612,7 +612,7 @@ const SPECIES = [
     "safety": "",
     "id": 21,
     "slug": "sable_antelope",
-    "image": "images/021_sable_antelope.jpg",
+    "image": "images/021_sable_antelope.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -641,7 +641,7 @@ const SPECIES = [
     "safety": "",
     "id": 22,
     "slug": "roan_antelope",
-    "image": "images/022_roan_antelope.jpg",
+    "image": "images/022_roan_antelope.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -671,7 +671,7 @@ const SPECIES = [
     "safety": "",
     "id": 23,
     "slug": "african_bushbuck",
-    "image": "images/023_african_bushbuck.jpg",
+    "image": "images/023_african_bushbuck.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",

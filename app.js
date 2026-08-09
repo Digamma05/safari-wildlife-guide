@@ -1,12 +1,40 @@
+const ID_STYLE=`
+.id-summary{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:14px}
+.id-selected-chip{background:#e4eee1;color:#274c37;border:1px solid #c9d9c5;border-radius:999px;padding:8px 11px;font-size:13px}
+.id-location-note{margin-top:12px;padding:10px 12px;border-radius:10px;background:#eef3e9;color:#405548;font-size:13px}
+.id-filters{display:flex;flex-direction:column;gap:12px;margin-top:16px}
+.id-category{background:#fffdf8;border:1px solid #ddd9cf;border-radius:16px;padding:16px}
+.id-category-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:11px}
+.id-category-head h3{margin:0 0 3px}
+.id-category-head p{margin:0;color:#6c756e;font-size:12px}
+.id-options{display:flex;flex-wrap:wrap;gap:8px}
+.id-option{background:#f3f1ea;color:#334038;border:1px solid #d7d4ca;border-radius:11px;padding:11px 13px;font-size:14px;font-weight:600}
+.id-option.selected{background:#2f6448;color:#fff;border-color:#2f6448}
+.id-results-section{margin-top:16px}
+.id-result{cursor:pointer;display:grid;grid-template-columns:32px 78px 1fr;gap:12px;align-items:center}
+.id-result img{width:78px;height:68px;object-fit:cover;border-radius:9px}
+.id-result-body{min-width:0}
+.result-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.result-top h3{margin:0}
+.match-label{font-size:11px;white-space:nowrap;border-radius:999px;padding:5px 8px;background:#e8efe5;color:#31573f;font-weight:700}
+.match-meter{height:5px;background:#e3e0d7;border-radius:5px;overflow:hidden;margin-top:8px}
+.match-meter span{display:block;height:100%;background:#5f856a;border-radius:5px}
+@media(max-width:600px){
+ .id-option{font-size:13px;padding:10px 11px}
+ .id-result{grid-template-columns:26px 68px 1fr;gap:9px}
+ .id-result img{width:68px;height:60px}
+ .match-label{font-size:10px}
+}
+`;
+if(!document.getElementById('id-overhaul-style')){const st=document.createElement('style');st.id='id-overhaul-style';st.textContent=ID_STYLE;document.head.appendChild(st);}
 const $ = (s,root=document)=>root.querySelector(s);
 const view = document.querySelector('#view');
 const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const places = ['All','Victoria Falls','Chobe','Khwai','Okavango'];
 const groups = [['All','All'],['mammal','Mammals'],['bird','Birds'],['reptile','Reptiles'],['amphibian','Amphibians']];
-const seenKey='safariSeenV3';
+const seenKey='safariSeenV4';
 let route=location.hash.slice(1)||'home';
 let place='All', group='All', query='';
-let identifyState={step:0, answers:{}};
 
 const esc=s=>String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 const readSeen=()=>{try{return JSON.parse(localStorage.getItem(seenKey)||'{}')}catch{return {}}};
@@ -35,7 +63,7 @@ function filtered(){
   return SPECIES.filter(s=>
     (place==='All'||s.places.includes(place)) &&
     (group==='All'||s.group===group) &&
-    (!q||[s.name,s.scientific,s.desc,s.clue,s.habitat,s.pattern,s.feature].join(' ').toLowerCase().includes(q))
+    (!q||[s.name,s.scientific,s.desc,s.clue,s.habitat,s.pattern,s.feature,Object.values(s.identification||{}).flat().join(' ')].join(' ').toLowerCase().includes(q))
   );
 }
 function progressBlock(){
@@ -141,70 +169,185 @@ function safari(){
   <section class="section"><div class="species-grid" id="safariGrid">${done.length?done.map(card).join(''):'<div class="empty">Nothing marked seen yet. Start with Identify or Browse.</div>'}</div></section>`;
 }
 
-const questions=[
- {key:'group',q:'What are you looking at?',opts:[['mammal','Mammal'],['bird','Bird'],['reptile','Reptile'],['amphibian','Amphibian'],['any','Not sure']]},
- {key:'size',q:'What size is it?',opts:[['tiny','Very small'],['small','Small'],['medium','Medium'],['large','Large'],['very large','Very large'],['any','Not sure']]},
- {key:'habitat',q:'Where is it?',opts:[['water','Water / wetland'],['open','Open grassland / floodplain'],['woodland','Woodland / bush'],['rocky','Rocky / dry ground'],['any','Not sure']]},
- {key:'pattern',q:'What is the strongest visual clue?',opts:[['spotted','Spotted / rosettes'],['striped','Striped / banded'],['patched','Patches / irregular blocks'],['plain','Mostly plain'],['blackwhite','Black and white'],['green','Green / blue-green'],['tawny','Tawny / reddish-brown'],['brown','Brown / grey-brown'],['grey','Grey'],['white','Mostly white'],['dark','Mostly dark'],['any','Not sure']]},
- {key:'feature',q:'Any obvious feature?',opts:[['horns','Horns / antlers'],['tusks','Tusks'],['long neck','Long neck'],['long legs','Very long legs'],['crest','Crest / casque / crown'],['huge ears','Very large ears'],['bill','Distinctive bill'],['tail','Distinctive tail'],['none','None obvious'],['any','Not sure']]}
+
+const IDENT_CATEGORIES = [
+  {key:'group', label:'Animal group', single:true, options:[
+    ['mammal','Mammal'],['bird','Bird'],['reptile','Reptile'],['amphibian','Amphibian']
+  ]},
+  {key:'size', label:'Size', single:true, options:[
+    ['tiny','Tiny · mouse / small frog'],['small','Small · squirrel / small bird'],['medium','Medium · hare / dove / small antelope'],['large','Large · eagle / large antelope'],['very large','Very large · elephant / stork / big reptile']
+  ]},
+  {key:'habitat', label:'Habitat', single:false, options:[
+    ['open grassland / floodplain','Open grassland / floodplain'],['woodland / bush','Woodland / bush'],['dense thicket','Dense thicket'],
+    ['wetland / marsh','Wetland / marsh'],['permanent water / river','Permanent water / river'],['riverbank / sandbank','Riverbank / sandbank'],
+    ['rocky / dry ground','Rocky / dry ground'],['sandy ground','Sandy ground'],['around camps / buildings','Around camps / buildings']
+  ]},
+  {key:'colour', label:'Colour', single:false, options:[
+    ['grey','Grey'],['brown / grey-brown','Brown / grey-brown'],['tawny / sandy','Tawny / sandy'],['reddish / chestnut','Reddish / chestnut'],
+    ['mostly dark','Mostly dark'],['mostly white','Mostly white'],['black & white','Black & white'],['green','Green'],
+    ['blue','Blue'],['yellow','Yellow'],['orange / red','Orange / red'],['multi-coloured','Multi-coloured']
+  ]},
+  {key:'pattern', label:'Markings & pattern', single:false, options:[
+    ['spotted / rosettes','Spotted / rosettes'],['striped / banded','Striped / banded'],['patchy / irregular markings','Patchy / irregular markings'],
+    ['barred','Barred'],['bold black-and-white pattern','Bold black-and-white pattern'],['mostly plain','Mostly plain'],['zigzag','Zigzag']
+  ]},
+  {key:'feature', label:'Distinctive features', single:false, options:[
+    ['horns / antlers','Horns / antlers'],['tusks','Tusks'],['long neck','Long neck'],['very long legs','Very long legs'],
+    ['very large ears','Very large ears'],['crest / crown / casque','Crest / crown / casque'],['distinctive bill','Distinctive bill'],
+    ['long / specialised bill','Long / specialised bill'],['very large bill','Very large bill'],['distinctive tail','Distinctive tail'],
+    ['long tail','Long tail'],['forked tail','Forked tail'],['ringed tail','Ringed tail'],['ear tufts','Ear tufts'],
+    ['facial mask','Facial mask'],['bare head / face','Bare head / face'],['long trunk','Long trunk'],
+    ['webbed / splayed feet','Webbed / splayed feet'],['long toes','Long toes'],['stocky / heavy body','Stocky / heavy body'],
+    ['slender body','Slender body'],['long body / snake-like','Long body / snake-like'],['domed shell','Domed shell'],
+    ['broad / flat body','Broad / flat body'],['distinctive throat / pouch','Distinctive throat / pouch'],
+    ['colourful face','Colourful face'],['red / yellow bill','Red / yellow bill'],['hooked bill','Hooked bill'],
+    ['bushy tail','Bushy tail'],['white back','White back'],['yellow eye','Yellow eye'],['distinctive eyes','Distinctive eyes'],
+    ['tiny ears','Tiny ears']
+  ]},
+  {key:'ecology', label:'Behaviour / lifestyle', single:false, options:[
+    ['aquatic / semi-aquatic','Aquatic / semi-aquatic'],['tree-dwelling / arboreal','Tree-dwelling / arboreal'],
+    ['burrowing / underground','Burrowing / underground'],['nocturnal','Nocturnal'],['ground-dwelling','Ground-dwelling'],
+    ['often around water','Often around water'],['social / often in groups','Social / often in groups']
+  ]}
 ];
-function habitatMatch(s,a){
-  if(a==='any') return 0;
-  const h=(s.habitat||'').toLowerCase();
-  if(a==='water') return /water|wetland|marsh|river|floodplain|lagoon|reed/.test(h)?1:0;
-  if(a==='open') return /grassland|open|floodplain|savanna/.test(h)?1:0;
-  if(a==='woodland') return /woodland|riverine|thicket|forest|bush/.test(h)?1:0;
-  if(a==='rocky') return /rock|dry|sand|scrub/.test(h)?1:0;
-  return 0;
+
+const identifyState={answers:{}, initialised:false};
+
+function traitValues(s,key){
+  if(key==='group') return [s.group];
+  return (s.identification&&s.identification[key])||[];
 }
-function attrMatch(s,key,a){
-  if(!a||a==='any') return 0;
-  if(key==='group') return s.group===a?5:0;
-  if(key==='size') return s.size===a?3:0;
-  if(key==='pattern') return (s.pattern||'').toLowerCase().includes(a)|| (s.desc||'').toLowerCase().includes(a)?2:0;
-  if(key==='feature'){
-    const hay=[s.feature,s.clue,s.desc].join(' ').toLowerCase();
-    return hay.includes(a)?3:0;
+function selectedFor(key){
+  const v=identifyState.answers[key];
+  if(!v) return [];
+  return Array.isArray(v)?v:[v];
+}
+function hasAnySelected(s,key){
+  const chosen=selectedFor(key);
+  if(!chosen.length) return true;
+  const vals=traitValues(s,key);
+  return chosen.some(v=>vals.includes(v));
+}
+function candidatePool(excludeKey=null){
+  return SPECIES.filter(s=>{
+    if(place!=='All'&&!s.places.includes(place)) return false;
+    for(const cat of IDENT_CATEGORIES){
+      if(cat.key===excludeKey) continue;
+      if(!hasAnySelected(s,cat.key)) return false;
+    }
+    return true;
+  });
+}
+function relevantOptions(cat){
+  const base=candidatePool(cat.key);
+  const selected=selectedFor(cat.key);
+  const present=new Set();
+  base.forEach(s=>traitValues(s,cat.key).forEach(v=>present.add(v)));
+  // Keep selected values visible even if another selection has made the intersection narrow.
+  selected.forEach(v=>present.add(v));
+  return cat.options.filter(([v])=>present.has(v));
+}
+function toggleTrait(key,value){
+  const cat=IDENT_CATEGORIES.find(c=>c.key===key);
+  if(cat.single){
+    if(identifyState.answers[key]===value) delete identifyState.answers[key];
+    else identifyState.answers[key]=value;
+  }else{
+    const current=new Set(selectedFor(key));
+    current.has(value)?current.delete(value):current.add(value);
+    if(current.size) identifyState.answers[key]=[...current];
+    else delete identifyState.answers[key];
   }
-  return 0;
+  renderIdentify();
+}
+function clearCategory(key){delete identifyState.answers[key];renderIdentify();}
+function clearIdentification(){identifyState.answers={};renderIdentify();}
+function traitChip(key,value){
+  const cat=IDENT_CATEGORIES.find(c=>c.key===key);
+  const label=(cat.options.find(o=>o[0]===value)||[value,value])[1];
+  return `<button class="id-selected-chip" data-id-remove="${esc(key)}" data-id-value="${esc(value)}">${esc(label)} ×</button>`;
+}
+function matchScore(s){
+  let score=0, matched=0, possible=0;
+  for(const cat of IDENT_CATEGORIES){
+    const chosen=selectedFor(cat.key);
+    if(!chosen.length) continue;
+    possible += cat.key==='group'?10:cat.key==='size'?8:cat.key==='feature'?8:cat.key==='habitat'?6:cat.key==='pattern'?5:cat.key==='colour'?5:3;
+    const vals=traitValues(s,cat.key);
+    if(cat.key==='group'){
+      if(vals.includes(chosen[0])){score+=10;matched+=10}
+      continue;
+    }
+    const hits=chosen.filter(v=>vals.includes(v)).length;
+    if(hits){
+      const weight=cat.key==='size'?8:cat.key==='feature'?8:cat.key==='habitat'?6:cat.key==='pattern'?5:cat.key==='colour'?5:3;
+      // Multiple observations within one category are alternatives, not requirements.
+      score += weight*(hits/chosen.length);
+      matched += weight*(hits/chosen.length);
+    }
+  }
+  if(place!=='All'&&s.places.includes(place)) score+=1.5;
+  if(s.likelihood==='very likely') score+=0.35;
+  else if(s.likelihood==='likely') score+=0.2;
+  const pct=possible?Math.round(Math.min(100,(matched/possible)*100)):0;
+  return {score,pct};
 }
 function identifyCandidates(){
-  const a=identifyState.answers;
-  return SPECIES.map(s=>{
-    let score=0;
-    score+=attrMatch(s,'group',a.group);
-    score+=attrMatch(s,'size',a.size);
-    score+=habitatMatch(s,a.habitat)*2;
-    score+=attrMatch(s,'pattern',a.pattern);
-    score+=attrMatch(s,'feature',a.feature);
-    if(place!=='All'&&s.places.includes(place)) score+=2;
-    if(s.likelihood==='very likely') score+=.8;
-    else if(s.likelihood==='likely') score+=.4;
-    return {...s,score};
-  }).sort((a,b)=>b.score-a.score);
+  return SPECIES
+    .filter(s=>place==='All'||s.places.includes(place))
+    .map(s=>({...s,...matchScore(s)}))
+    .filter(s=>!selectedFor('group').length||s.group===selectedFor('group')[0])
+    .sort((a,b)=>b.score-a.score);
 }
-function identify(){
-  const step=identifyState.step;
-  if(step>=questions.length){
-    const results=identifyCandidates();
-    view.innerHTML=`<section class="hero"><div class="eyebrow">IDENTIFICATION</div><h2>Best matches</h2>
-      <p class="muted">The key ranks candidates rather than requiring every feature to match. ${place!=='All'?`Location: <b>${esc(place)}</b>.`:''}</p>
-      <div class="answer-summary">${Object.entries(identifyState.answers).filter(([,v])=>v&&v!=='any').map(([k,v])=>`<span class="chip">${esc(k)}: ${esc(v)}</span>`).join('')}</div>
+function matchStrength(s,index){
+  if(!Object.values(identifyState.answers).some(v=>Array.isArray(v)?v.length:v)) return 'Broad match';
+  if(index===0&&s.pct>=75)return 'Strongest match';
+  if(s.pct>=60)return 'Strong match';
+  if(s.pct>=40)return 'Good match';
+  return 'Possible';
+}
+function renderIdentify(){
+  const chosenCount=Object.values(identifyState.answers).reduce((n,v)=>n+(Array.isArray(v)?v.length:(v?1:0)),0);
+  const results=identifyCandidates();
+  const meaningful=chosenCount>0;
+  view.innerHTML=`
+    <section class="hero id-hero">
+      <div class="eyebrow">IDENTIFICATION</div>
+      <h2>Tell me what you can see</h2>
+      <p class="lead">Select any observations you are confident about. You can skip anything you cannot see clearly.</p>
+      ${place!=='All'?`<div class="id-location-note">Location: <b>${esc(place)}</b> — used to improve ranking.</div>`:''}
+      <div class="id-summary">
+        ${chosenCount?Object.entries(identifyState.answers).flatMap(([k,v])=>(Array.isArray(v)?v:[v]).map(x=>traitChip(k,x))).join(''):'<span class="muted">No observations selected yet</span>'}
+        ${chosenCount?'<button class="textbtn" data-id-clear="1">Clear all</button>':''}
+      </div>
     </section>
-    <section class="section"><div class="result-list">${results.slice(0,8).map((s,i)=>`<article class="result" data-id="${s.id}">
-      <div class="rank">${i<3?'★'.repeat(3-i):'•'}</div><img src="${esc(s.image)}" alt="${esc(s.name)}">
-      <div><h3>${esc(s.name)}</h3><p class="muted"><i>${esc(s.scientific)}</i></p><p>${esc(s.clue)}</p><span class="badge">${esc(s.likelihood)}</span></div>
-    </article>`).join('')}</div></section>
-    <div class="row"><button class="bigbtn" data-ident-reset="1">Start again</button><button class="bigbtn secondary" data-route="browse">Browse all species</button></div>`;
-    return;
-  }
-  const q=questions[step];
-  const current=identifyState.answers[q.key];
-  view.innerHTML=`<section class="hero"><div class="eyebrow">IDENTIFICATION · STEP ${step+1} OF ${questions.length}</div><h2>${esc(q.q)}</h2>
-    <p class="muted">Choose the closest answer. "Not sure" always keeps alternatives open.</p></section>
-    <section class="question">${q.opts.map(([v,t])=>`<button class="option ${current===v?'selected':''}" data-answer="${v}">${esc(t)}</button>`).join('')}</section>
-    <div class="identify-footer"><button class="textbtn" data-ident-back="${step}">${step?'← Previous':''}</button><span>${step?`Answered ${step} of ${questions.length}`:'Start broad — you can be approximate.'}</span></div>`;
+    <section class="id-filters">
+      ${IDENT_CATEGORIES.map(cat=>{
+        const opts=relevantOptions(cat);
+        if(!opts.length)return '';
+        const selected=new Set(selectedFor(cat.key));
+        return `<div class="id-category">
+          <div class="id-category-head"><div><h3>${esc(cat.label)}</h3><p>${cat.key==='group'||cat.key==='size'?'Choose one':'Choose any that apply'}</p></div>
+          ${selected.size?`<button class="textbtn" data-id-clear-category="${esc(cat.key)}">Clear</button>`:''}</div>
+          <div class="id-options">${opts.map(([v,label])=>`<button class="id-option ${selected.has(v)?'selected':''}" data-id-toggle="${esc(cat.key)}" data-id-value="${esc(v)}">${esc(label)}</button>`).join('')}</div>
+        </div>`;
+      }).join('')}
+    </section>
+    ${meaningful?`
+    <section class="section id-results-section">
+      <div class="section-head"><div><h2>Likely matches</h2><p class="muted">${results.length} species ranked from your observations.</p></div></div>
+      <div class="result-list">${results.slice(0,10).map((s,i)=>`
+        <article class="result id-result" data-id="${s.id}">
+          <div class="rank">${i===0?'★':i<3?'☆':'#'+(i+1)}</div>
+          <img src="${esc(s.image)}" alt="${esc(s.name)}">
+          <div class="id-result-body"><div class="result-top"><div><h3>${esc(s.name)}</h3><p class="muted"><i>${esc(s.scientific)}</i></p></div><span class="match-label">${matchStrength(s,i)}</span></div>
+          <p>${esc(s.clue)}</p>
+          <div class="match-meter"><span style="width:${Math.max(8,s.pct)}%"></span></div></div>
+        </article>`).join('')}</div>
+    </section>`:''}
+    <div class="row"><button class="bigbtn secondary" data-route="browse">Browse all species</button></div>`;
 }
+function identify(){renderIdentify();}
 function settings(){
   const prepared=localStorage.getItem('offlinePrepared')==='1';
   view.innerHTML=`<section class="hero"><div class="eyebrow">OFFLINE & ABOUT</div><h2>Prepare for safari</h2>
@@ -285,15 +428,14 @@ document.addEventListener('click',e=>{
   if(placeEl){place=placeEl.dataset.place;render();return}
   const groupEl=e.target.closest('[data-group]');
   if(groupEl){group=groupEl.dataset.group;render();return}
-  const answer=e.target.closest('[data-answer]');
-  if(answer){
-    identifyState.answers[questions[identifyState.step].key]=answer.dataset.answer;
-    identifyState.step++; identify(); return;
-  }
-  const back=e.target.closest('[data-ident-back]');
-  if(back){identifyState.step=Math.max(0,identifyState.step-1);identify();return}
-  const resetId=e.target.closest('[data-ident-reset]');
-  if(resetId){identifyState={step:0,answers:{}};identify();return}
+  const idToggle=e.target.closest('[data-id-toggle]');
+  if(idToggle){toggleTrait(idToggle.dataset.idToggle,idToggle.dataset.idValue);return}
+  const idRemove=e.target.closest('[data-id-remove]');
+  if(idRemove){toggleTrait(idRemove.dataset.idRemove,idRemove.dataset.idValue);return}
+  const idClear=e.target.closest('[data-id-clear]');
+  if(idClear){clearIdentification();return}
+  const idClearCat=e.target.closest('[data-id-clear-category]');
+  if(idClearCat){clearCategory(idClearCat.dataset.idClearCategory);return}
   const result=e.target.closest('.result[data-id]');
   if(result){navigate('species-'+result.dataset.id);return}
   const species=e.target.closest('.species-card[data-id]');

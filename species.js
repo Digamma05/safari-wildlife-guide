@@ -11,7 +11,7 @@ const SPECIES = [
     ],
     "likelihood": "very likely",
     "desc": "Very large grey mammal; huge ears; long trunk; females often in herds.",
-    "size": "large",
+    "size": "very large",
     "pattern": "grey",
     "feature": "none",
     "diet": "herbivore",
@@ -20,13 +20,36 @@ const SPECIES = [
     "safety": "",
     "id": 1,
     "slug": "african_elephant",
-    "image": "images/001_african_elephant.webp",
+    "image": "images/001_african_elephant.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "very large ears",
+        "long trunk",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ],
+      "pattern": []
     }
   },
   {
@@ -41,7 +64,7 @@ const SPECIES = [
     ],
     "likelihood": "very likely",
     "desc": "Heavy dark buffalo with broad bossed horns; often in large herds near water.",
-    "size": "large",
+    "size": "very large",
     "pattern": "dark",
     "feature": "horns",
     "diet": "herbivore",
@@ -50,13 +73,35 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 2,
     "slug": "african_buffalo",
-    "image": "images/002_african_buffalo.webp",
+    "image": "images/002_african_buffalo.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "horns / antlers",
+        "stocky / heavy body"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "pattern": []
     }
   },
   {
@@ -80,13 +125,33 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 3,
     "slug": "lion",
-    "image": "images/003_lion.webp",
+    "image": "images/003_lion.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "distinctive tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ],
+      "pattern": []
     }
   },
   {
@@ -101,7 +166,7 @@ const SPECIES = [
     ],
     "likelihood": "possible",
     "desc": "Rosette-spotted cat, usually solitary; powerful build and long tail.",
-    "size": "medium",
+    "size": "large",
     "pattern": "spotted",
     "feature": "none",
     "diet": "carnivore",
@@ -110,13 +175,34 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 4,
     "slug": "leopard",
-    "image": "images/004_leopard.webp",
+    "image": "images/004_leopard.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "feature": [
+        "long tail",
+        "slender body"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "dense thicket"
+      ],
+      "ecology": [
+        "nocturnal",
+        "ground-dwelling"
+      ],
+      "colour": []
     }
   },
   {
@@ -130,7 +216,7 @@ const SPECIES = [
     ],
     "likelihood": "possible",
     "desc": "Slim spotted cat with black tear marks, long legs and small rounded head.",
-    "size": "medium",
+    "size": "large",
     "pattern": "spotted",
     "feature": "none",
     "diet": "carnivore",
@@ -139,13 +225,34 @@ const SPECIES = [
     "safety": "",
     "id": 5,
     "slug": "cheetah",
-    "image": "images/005_cheetah.webp",
+    "image": "images/005_cheetah.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "very long legs",
+        "slender body"
+      ],
+      "habitat": [
+        "open grassland / floodplain"
+      ],
+      "ecology": [
+        "ground-dwelling"
+      ]
     }
   },
   {
@@ -159,7 +266,7 @@ const SPECIES = [
     ],
     "likelihood": "possible",
     "desc": "Patchwork black, brown and white coat; enormous rounded ears; highly social.",
-    "size": "medium",
+    "size": "large",
     "pattern": "patchy",
     "feature": "none",
     "diet": "carnivore",
@@ -168,13 +275,35 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 6,
     "slug": "african_wild_dog",
-    "image": "images/006_african_wild_dog.webp",
+    "image": "images/006_african_wild_dog.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "pattern": [
+        "patchy / irregular markings",
+        "bold black-and-white pattern"
+      ],
+      "feature": [
+        "very large ears",
+        "slender body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ],
+      "colour": []
     }
   },
   {
@@ -198,13 +327,36 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 7,
     "slug": "spotted_hyena",
-    "image": "images/007_spotted_hyena.webp",
+    "image": "images/007_spotted_hyena.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "stocky / heavy body",
+        "very large ears"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ]
     }
   },
   {
@@ -217,7 +369,7 @@ const SPECIES = [
     ],
     "likelihood": "uncommon",
     "desc": "Shaggy dark brown hyena with pale legs and striped lower limbs.",
-    "size": "medium",
+    "size": "large",
     "pattern": "shaggy",
     "feature": "none",
     "diet": "carnivore",
@@ -226,13 +378,35 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 8,
     "slug": "brown_hyena",
-    "image": "images/008_brown_hyena.webp",
+    "image": "images/008_brown_hyena.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "nocturnal",
+        "ground-dwelling"
+      ]
     }
   },
   {
@@ -256,13 +430,33 @@ const SPECIES = [
     "safety": "",
     "id": 9,
     "slug": "giraffe",
-    "image": "images/009_giraffe.webp",
+    "image": "images/009_giraffe.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "pattern": [
+        "patchy / irregular markings"
+      ],
+      "feature": [
+        "long neck",
+        "crest / crown / casque"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": []
     }
   },
   {
@@ -286,13 +480,33 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 10,
     "slug": "common_hippopotamus",
-    "image": "images/010_common_hippopotamus.webp",
+    "image": "images/010_common_hippopotamus.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "ecology": [
+        "aquatic / semi-aquatic",
+        "ground-dwelling"
+      ],
+      "pattern": []
     }
   },
   {
@@ -316,13 +530,34 @@ const SPECIES = [
     "safety": "",
     "id": 11,
     "slug": "common_warthog",
-    "image": "images/011_common_warthog.webp",
+    "image": "images/011_common_warthog.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "tusks",
+        "distinctive tail",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling"
+      ],
+      "pattern": []
     }
   },
   {
@@ -346,13 +581,33 @@ const SPECIES = [
     "safety": "",
     "id": 12,
     "slug": "common_eland",
-    "image": "images/012_common_eland.webp",
+    "image": "images/012_common_eland.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "horns / antlers",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [
+        "mostly plain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -376,13 +631,32 @@ const SPECIES = [
     "safety": "",
     "id": 13,
     "slug": "greater_kudu",
-    "image": "images/013_greater_kudu.webp",
+    "image": "images/013_greater_kudu.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "dense thicket"
+      ],
+      "ecology": []
     }
   },
   {
@@ -406,13 +680,32 @@ const SPECIES = [
     "safety": "",
     "id": 14,
     "slug": "waterbuck",
-    "image": "images/014_waterbuck.webp",
+    "image": "images/014_waterbuck.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "feature": [
+        "horns / antlers",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "colour": [],
+      "pattern": [
+        "mostly plain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -435,13 +728,32 @@ const SPECIES = [
     "safety": "",
     "id": 15,
     "slug": "red_lechwe",
-    "image": "images/015_red_lechwe.webp",
+    "image": "images/015_red_lechwe.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "horns / antlers",
+        "webbed / splayed feet"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -464,13 +776,29 @@ const SPECIES = [
     "safety": "",
     "id": 16,
     "slug": "tsessebe",
-    "image": "images/016_tsessebe.webp",
+    "image": "images/016_tsessebe.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -494,13 +822,30 @@ const SPECIES = [
     "safety": "",
     "id": 17,
     "slug": "impala",
-    "image": "images/017_impala.webp",
+    "image": "images/017_impala.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -524,13 +869,30 @@ const SPECIES = [
     "safety": "",
     "id": 18,
     "slug": "common_duiker",
-    "image": "images/018_common_duiker.webp",
+    "image": "images/018_common_duiker.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "dense thicket"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -554,13 +916,30 @@ const SPECIES = [
     "safety": "",
     "id": 19,
     "slug": "steenbok",
-    "image": "images/019_steenbok.webp",
+    "image": "images/019_steenbok.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "very large ears"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "sandy ground"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -584,13 +963,31 @@ const SPECIES = [
     "safety": "",
     "id": 20,
     "slug": "southern_reedbuck",
-    "image": "images/020_southern_reedbuck.webp",
+    "image": "images/020_southern_reedbuck.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "grey"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -612,13 +1009,30 @@ const SPECIES = [
     "safety": "",
     "id": 21,
     "slug": "sable_antelope",
-    "image": "images/021_sable_antelope.webp",
+    "image": "images/021_sable_antelope.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -641,13 +1055,33 @@ const SPECIES = [
     "safety": "",
     "id": 22,
     "slug": "roan_antelope",
-    "image": "images/022_roan_antelope.webp",
+    "image": "images/022_roan_antelope.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "reddish / chestnut",
+        "black & white"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -671,13 +1105,34 @@ const SPECIES = [
     "safety": "",
     "id": 23,
     "slug": "african_bushbuck",
-    "image": "images/023_african_bushbuck.webp",
+    "image": "images/023_african_bushbuck.jpg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "colour": [
+        "reddish / chestnut",
+        "mostly dark"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "dense thicket",
+        "permanent water / river"
+      ],
+      "ecology": []
     }
   },
   {
@@ -701,13 +1156,32 @@ const SPECIES = [
     "safety": "",
     "id": 24,
     "slug": "common_genet",
-    "image": "images/024_common_genet.webp",
+    "image": "images/024_common_genet.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "feature": [
+        "ringed tail",
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "nocturnal"
+      ],
+      "colour": []
     }
   },
   {
@@ -731,13 +1205,32 @@ const SPECIES = [
     "safety": "",
     "id": 25,
     "slug": "large_spotted_genet",
-    "image": "images/025_large_spotted_genet.webp",
+    "image": "images/025_large_spotted_genet.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "pattern": [
+        "spotted / rosettes",
+        "striped / banded"
+      ],
+      "feature": [
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "nocturnal"
+      ],
+      "colour": []
     }
   },
   {
@@ -760,13 +1253,33 @@ const SPECIES = [
     "safety": "",
     "id": 26,
     "slug": "selous_mongoose",
-    "image": "images/026_selous_mongoose.webp",
+    "image": "images/026_selous_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "grey"
+      ],
+      "feature": [
+        "distinctive tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling"
+      ],
+      "pattern": []
     }
   },
   {
@@ -790,13 +1303,32 @@ const SPECIES = [
     "safety": "",
     "id": 27,
     "slug": "banded_mongoose",
-    "image": "images/027_banded_mongoose.webp",
+    "image": "images/027_banded_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "facial mask"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "social / often in groups"
+      ],
+      "colour": []
     }
   },
   {
@@ -820,13 +1352,34 @@ const SPECIES = [
     "safety": "",
     "id": 28,
     "slug": "vervet_monkey",
-    "image": "images/028_vervet_monkey.webp",
+    "image": "images/028_vervet_monkey.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "facial mask",
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal",
+        "social / often in groups"
+      ],
+      "pattern": []
     }
   },
   {
@@ -850,13 +1403,34 @@ const SPECIES = [
     "safety": "",
     "id": 29,
     "slug": "chacma_baboon",
-    "image": "images/029_chacma_baboon.webp",
+    "image": "images/029_chacma_baboon.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "long tail",
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "ground-dwelling",
+        "social / often in groups"
+      ],
+      "pattern": []
     }
   },
   {
@@ -880,13 +1454,35 @@ const SPECIES = [
     "safety": "",
     "id": 30,
     "slug": "southern_african_porcupine",
-    "image": "images/030_southern_african_porcupine.webp",
+    "image": "images/030_southern_african_porcupine.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "sandy ground"
+      ],
+      "ecology": [
+        "nocturnal",
+        "ground-dwelling"
+      ],
+      "colour": [
+        "black & white"
+      ]
     }
   },
   {
@@ -910,13 +1506,34 @@ const SPECIES = [
     "safety": "",
     "id": 31,
     "slug": "cape_hare",
-    "image": "images/031_cape_hare.webp",
+    "image": "images/031_cape_hare.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "very large ears",
+        "long tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "sandy ground"
+      ],
+      "ecology": [
+        "nocturnal",
+        "ground-dwelling"
+      ],
+      "pattern": []
     }
   },
   {
@@ -940,13 +1557,36 @@ const SPECIES = [
     "safety": "",
     "id": 32,
     "slug": "african_fish_eagle",
-    "image": "images/032_african_fish_eagle.webp",
+    "image": "images/032_african_fish_eagle.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "black & white",
+        "brown / grey-brown",
+        "yellow",
+        "mostly white"
+      ],
+      "feature": [
+        "hooked bill",
+        "colourful face"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -969,13 +1609,34 @@ const SPECIES = [
     "safety": "",
     "id": 33,
     "slug": "african_jacana",
-    "image": "images/033_african_jacana.webp",
+    "image": "images/033_african_jacana.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "mostly dark"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "feature": [
+        "long toes",
+        "distinctive bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "ecology": []
     }
   },
   {
@@ -997,13 +1658,34 @@ const SPECIES = [
     "safety": "",
     "id": 34,
     "slug": "african_skimmer",
-    "image": "images/034_african_skimmer.webp",
+    "image": "images/034_african_skimmer.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "black & white",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "riverbank / sandbank",
+        "permanent water / river"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1027,13 +1709,33 @@ const SPECIES = [
     "safety": "",
     "id": 35,
     "slug": "southern_ground_hornbill",
-    "image": "images/035_southern_ground_hornbill.webp",
+    "image": "images/035_southern_ground_hornbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "mostly dark",
+        "black & white",
+        "orange / red"
+      ],
+      "feature": [
+        "very large bill",
+        "bare head / face"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1057,13 +1759,33 @@ const SPECIES = [
     "safety": "",
     "id": 36,
     "slug": "southern_yellow_billed_hornbill",
-    "image": "images/036_southern_yellow_billed_hornbill.webp",
+    "image": "images/036_southern_yellow_billed_hornbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "yellow",
+        "mostly white"
+      ],
+      "feature": [
+        "very large bill",
+        "distinctive tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1087,13 +1809,30 @@ const SPECIES = [
     "safety": "",
     "id": 37,
     "slug": "african_grey_hornbill",
-    "image": "images/037_african_grey_hornbill.webp",
+    "image": "images/037_african_grey_hornbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "very large bill",
+        "distinctive tail"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1117,13 +1856,31 @@ const SPECIES = [
     "safety": "",
     "id": 38,
     "slug": "lilac_breasted_roller",
-    "image": "images/038_lilac_breasted_roller.webp",
+    "image": "images/038_lilac_breasted_roller.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "blue",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1147,13 +1904,33 @@ const SPECIES = [
     "safety": "",
     "id": 39,
     "slug": "crowned_lapwing",
-    "image": "images/039_crowned_lapwing.webp",
+    "image": "images/039_crowned_lapwing.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "black & white",
+        "orange / red"
+      ],
+      "feature": [
+        "crest / crown / casque"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "sandy ground"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1177,13 +1954,32 @@ const SPECIES = [
     "safety": "",
     "id": 40,
     "slug": "wattled_lapwing",
-    "image": "images/040_wattled_lapwing.webp",
+    "image": "images/040_wattled_lapwing.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "yellow"
+      ],
+      "feature": [
+        "very long legs",
+        "facial mask"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1206,13 +2002,31 @@ const SPECIES = [
     "safety": "",
     "id": 41,
     "slug": "african_openbill",
-    "image": "images/041_african_openbill.webp",
+    "image": "images/041_african_openbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "distinctive bill",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1236,13 +2050,32 @@ const SPECIES = [
     "safety": "",
     "id": 42,
     "slug": "marabou_stork",
-    "image": "images/042_marabou_stork.webp",
+    "image": "images/042_marabou_stork.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "very large bill",
+        "bare head / face",
+        "distinctive throat / pouch"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1265,13 +2098,34 @@ const SPECIES = [
     "safety": "",
     "id": 43,
     "slug": "yellow_billed_stork",
-    "image": "images/043_yellow_billed_stork.webp",
+    "image": "images/043_yellow_billed_stork.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly white",
+        "black & white",
+        "yellow",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1295,13 +2149,30 @@ const SPECIES = [
     "safety": "",
     "id": 44,
     "slug": "african_woolly_necked_stork",
-    "image": "images/044_african_woolly_necked_stork.webp",
+    "image": "images/044_african_woolly_necked_stork.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "feature": [
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1325,13 +2196,31 @@ const SPECIES = [
     "safety": "",
     "id": 45,
     "slug": "hamerkop",
-    "image": "images/045_hamerkop.webp",
+    "image": "images/045_hamerkop.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "very long legs"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1355,13 +2244,32 @@ const SPECIES = [
     "safety": "",
     "id": 46,
     "slug": "goliath_heron",
-    "image": "images/046_goliath_heron.webp",
+    "image": "images/046_goliath_heron.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "grey",
+        "orange / red"
+      ],
+      "feature": [
+        "very long legs",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1384,13 +2292,30 @@ const SPECIES = [
     "safety": "",
     "id": 47,
     "slug": "african_darter",
-    "image": "images/047_african_darter.webp",
+    "image": "images/047_african_darter.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "long neck"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1414,13 +2339,33 @@ const SPECIES = [
     "safety": "",
     "id": 48,
     "slug": "great_white_egret",
-    "image": "images/048_great_white_egret.webp",
+    "image": "images/048_great_white_egret.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly white",
+        "yellow"
+      ],
+      "feature": [
+        "long neck",
+        "very long legs",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1444,13 +2389,31 @@ const SPECIES = [
     "safety": "",
     "id": 49,
     "slug": "hadada_ibis",
-    "image": "images/049_hadada_ibis.webp",
+    "image": "images/049_hadada_ibis.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "long / specialised bill",
+        "very long legs"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1473,13 +2436,29 @@ const SPECIES = [
     "safety": "",
     "id": 50,
     "slug": "glossy_ibis",
-    "image": "images/050_glossy_ibis.webp",
+    "image": "images/050_glossy_ibis.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1503,13 +2482,32 @@ const SPECIES = [
     "safety": "",
     "id": 51,
     "slug": "african_sacred_ibis",
-    "image": "images/051_african_sacred_ibis.webp",
+    "image": "images/051_african_sacred_ibis.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly white",
+        "mostly dark"
+      ],
+      "feature": [
+        "long / specialised bill",
+        "bare head / face"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1533,13 +2531,35 @@ const SPECIES = [
     "safety": "",
     "id": 52,
     "slug": "helmeted_guineafowl",
-    "image": "images/052_helmeted_guineafowl.webp",
+    "image": "images/052_helmeted_guineafowl.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "grey",
+        "orange / red",
+        "blue"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "bare head / face"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1563,13 +2583,33 @@ const SPECIES = [
     "safety": "",
     "id": 53,
     "slug": "crested_francolin",
-    "image": "images/053_crested_francolin.webp",
+    "image": "images/053_crested_francolin.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "striped / banded",
+        "barred"
+      ],
+      "feature": [
+        "crest / crown / casque"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "dense thicket"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1592,13 +2632,33 @@ const SPECIES = [
     "safety": "",
     "id": 54,
     "slug": "natal_spurfowl",
-    "image": "images/054_natal_spurfowl.webp",
+    "image": "images/054_natal_spurfowl.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "striped / banded",
+        "barred"
+      ],
+      "feature": [
+        "very long legs"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1621,13 +2681,34 @@ const SPECIES = [
     "safety": "",
     "id": 55,
     "slug": "kori_bustard",
-    "image": "images/055_kori_bustard.webp",
+    "image": "images/055_kori_bustard.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "black & white",
+        "grey"
+      ],
+      "feature": [
+        "long neck",
+        "very long legs"
+      ],
+      "habitat": [
+        "open grassland / floodplain"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1651,13 +2732,31 @@ const SPECIES = [
     "safety": "",
     "id": 56,
     "slug": "african_paradise_flycatcher",
-    "image": "images/056_african_paradise_flycatcher.webp",
+    "image": "images/056_african_paradise_flycatcher.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -1681,13 +2780,31 @@ const SPECIES = [
     "safety": "",
     "id": 57,
     "slug": "southern_red_billed_hornbill",
-    "image": "images/057_southern_red_billed_hornbill.webp",
+    "image": "images/057_southern_red_billed_hornbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "orange / red"
+      ],
+      "feature": [
+        "very large bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1710,13 +2827,33 @@ const SPECIES = [
     "safety": "",
     "id": 58,
     "slug": "meyers_parrot",
-    "image": "images/058_meyers_parrot.webp",
+    "image": "images/058_meyers_parrot.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "green",
+        "yellow",
+        "grey"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -1740,13 +2877,30 @@ const SPECIES = [
     "safety": "",
     "id": 59,
     "slug": "grey_go_away_bird",
-    "image": "images/059_grey_go_away_bird.webp",
+    "image": "images/059_grey_go_away_bird.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "grey"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1770,13 +2924,31 @@ const SPECIES = [
     "safety": "",
     "id": 60,
     "slug": "burchells_starling",
-    "image": "images/060_burchells_starling.webp",
+    "image": "images/060_burchells_starling.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "blue",
+        "green",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive eyes"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1800,13 +2972,31 @@ const SPECIES = [
     "safety": "",
     "id": 61,
     "slug": "cape_starling",
-    "image": "images/061_cape_starling.webp",
+    "image": "images/061_cape_starling.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "blue",
+        "green",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive eyes"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1830,13 +3020,34 @@ const SPECIES = [
     "safety": "",
     "id": 62,
     "slug": "african_hoopoe",
-    "image": "images/062_african_hoopoe.webp",
+    "image": "images/062_african_hoopoe.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "orange / red",
+        "black & white"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1860,13 +3071,32 @@ const SPECIES = [
     "safety": "",
     "id": 63,
     "slug": "woodland_kingfisher",
-    "image": "images/063_woodland_kingfisher.webp",
+    "image": "images/063_woodland_kingfisher.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "blue",
+        "black & white",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1890,13 +3120,32 @@ const SPECIES = [
     "safety": "",
     "id": 64,
     "slug": "pied_kingfisher",
-    "image": "images/064_pied_kingfisher.webp",
+    "image": "images/064_pied_kingfisher.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "wetland / marsh"
+      ],
+      "pattern": [
+        "bold black-and-white pattern"
+      ],
+      "ecology": []
     }
   },
   {
@@ -1919,13 +3168,31 @@ const SPECIES = [
     "safety": "",
     "id": 65,
     "slug": "malachite_kingfisher",
-    "image": "images/065_malachite_kingfisher.webp",
+    "image": "images/065_malachite_kingfisher.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "blue",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1949,13 +3216,31 @@ const SPECIES = [
     "safety": "",
     "id": 66,
     "slug": "white_fronted_bee_eater",
-    "image": "images/066_white_fronted_bee_eater.webp",
+    "image": "images/066_white_fronted_bee_eater.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "green",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -1979,13 +3264,31 @@ const SPECIES = [
     "safety": "",
     "id": 67,
     "slug": "little_bee_eater",
-    "image": "images/067_little_bee_eater.webp",
+    "image": "images/067_little_bee_eater.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "green",
+        "yellow"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2009,13 +3312,34 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 68,
     "slug": "nile_crocodile",
-    "image": "images/068_nile_crocodile.webp",
+    "image": "images/068_nile_crocodile.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "green",
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "stocky / heavy body",
+        "distinctive tail"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "aquatic / semi-aquatic"
+      ],
+      "pattern": []
     }
   },
   {
@@ -2039,13 +3363,34 @@ const SPECIES = [
     "safety": "",
     "id": 69,
     "slug": "nile_monitor",
-    "image": "images/069_nile_monitor.webp",
+    "image": "images/069_nile_monitor.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "yellow"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "distinctive tail",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "woodland / bush"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2069,13 +3414,34 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 70,
     "slug": "southern_rock_python",
-    "image": "images/070_southern_rock_python.webp",
+    "image": "images/070_southern_rock_python.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "patchy / irregular markings"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "rocky / dry ground"
+      ],
+      "ecology": [
+        "ground-dwelling"
+      ]
     }
   },
   {
@@ -2099,13 +3465,32 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 71,
     "slug": "mozambique_spitting_cobra",
-    "image": "images/071_mozambique_spitting_cobra.webp",
+    "image": "images/071_mozambique_spitting_cobra.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "rocky / dry ground"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2129,13 +3514,32 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 72,
     "slug": "black_mamba",
-    "image": "images/072_black_mamba.webp",
+    "image": "images/072_black_mamba.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [
+        "mostly plain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2159,13 +3563,33 @@ const SPECIES = [
     "safety": "",
     "id": 73,
     "slug": "southern_tree_agama",
-    "image": "images/073_southern_tree_agama.webp",
+    "image": "images/073_southern_tree_agama.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "blue",
+        "orange / red",
+        "green"
+      ],
+      "feature": [
+        "distinctive eyes"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -2189,13 +3613,32 @@ const SPECIES = [
     "safety": "",
     "id": 74,
     "slug": "leopard_tortoise",
-    "image": "images/074_leopard_tortoise.webp",
+    "image": "images/074_leopard_tortoise.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "feature": [
+        "domed shell"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2219,13 +3662,32 @@ const SPECIES = [
     "safety": "",
     "id": 75,
     "slug": "african_wildcat",
-    "image": "images/075_african_wildcat.webp",
+    "image": "images/075_african_wildcat.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "ringed tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2248,13 +3710,30 @@ const SPECIES = [
     "safety": "",
     "id": 76,
     "slug": "common_springbok",
-    "image": "images/076_common_springbok.webp",
+    "image": "images/076_common_springbok.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "tawny / sandy",
+        "white"
+      ],
+      "feature": [
+        "long tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2278,13 +3757,33 @@ const SPECIES = [
     "safety": "",
     "id": 77,
     "slug": "southern_bushbuck",
-    "image": "images/077_southern_bushbuck.webp",
+    "image": "images/077_southern_bushbuck.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "reddish / chestnut",
+        "mostly dark"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "feature": [
+        "horns / antlers"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2306,13 +3805,28 @@ const SPECIES = [
     "safety": "",
     "id": 78,
     "slug": "sharpe_s_grysbok",
-    "image": "images/078_sharpe_s_grysbok.webp",
+    "image": "images/078_sharpe_s_grysbok.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [],
+      "habitat": [
+        "dense thicket",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2335,13 +3849,31 @@ const SPECIES = [
     "safety": "",
     "id": 79,
     "slug": "yellow_mongoose",
-    "image": "images/079_yellow_mongoose.webp",
+    "image": "images/079_yellow_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "tawny / sandy",
+        "yellow"
+      ],
+      "feature": [
+        "bushy tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2365,13 +3897,33 @@ const SPECIES = [
     "safety": "",
     "id": 80,
     "slug": "white_tailed_mongoose",
-    "image": "images/080_white_tailed_mongoose.webp",
+    "image": "images/080_white_tailed_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "mostly white"
+      ],
+      "feature": [
+        "distinctive tail"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "ecology": [
+        "nocturnal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -2395,13 +3947,36 @@ const SPECIES = [
     "safety": "",
     "id": 81,
     "slug": "african_civet",
-    "image": "images/081_african_civet.webp",
+    "image": "images/081_african_civet.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "black & white",
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "spotted / rosettes",
+        "bold black-and-white pattern"
+      ],
+      "feature": [
+        "facial mask"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "ecology": [
+        "nocturnal"
+      ]
     }
   },
   {
@@ -2425,13 +4000,30 @@ const SPECIES = [
     "safety": "",
     "id": 82,
     "slug": "common_slender_mongoose",
-    "image": "images/082_common_slender_mongoose.webp",
+    "image": "images/082_common_slender_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "slender body"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2455,13 +4047,32 @@ const SPECIES = [
     "safety": "",
     "id": 83,
     "slug": "dwarf_mongoose",
-    "image": "images/083_dwarf_mongoose.webp",
+    "image": "images/083_dwarf_mongoose.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "tiny ears"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "social / often in groups"
+      ],
+      "pattern": []
     }
   },
   {
@@ -2485,13 +4096,31 @@ const SPECIES = [
     "safety": "Give it space; it can be defensive.",
     "id": 84,
     "slug": "honey_badger",
-    "image": "images/084_honey_badger.webp",
+    "image": "images/084_honey_badger.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "black & white",
+        "grey"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2514,13 +4143,33 @@ const SPECIES = [
     "safety": "",
     "id": 85,
     "slug": "serval",
-    "image": "images/085_serval.webp",
+    "image": "images/085_serval.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "pattern": [
+        "spotted / rosettes"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "very long legs",
+        "very large ears"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2544,13 +4193,31 @@ const SPECIES = [
     "safety": "",
     "id": 86,
     "slug": "caracal",
-    "image": "images/086_caracal.webp",
+    "image": "images/086_caracal.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "reddish / chestnut"
+      ],
+      "feature": [
+        "ear tufts",
+        "distinctive tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2573,13 +4240,31 @@ const SPECIES = [
     "safety": "",
     "id": 87,
     "slug": "bat_eared_fox",
-    "image": "images/087_bat_eared_fox.webp",
+    "image": "images/087_bat_eared_fox.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "grey",
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "very large ears"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "sandy ground"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2603,13 +4288,33 @@ const SPECIES = [
     "safety": "",
     "id": 88,
     "slug": "martial_eagle",
-    "image": "images/088_martial_eagle.webp",
+    "image": "images/088_martial_eagle.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "black & white",
+        "mostly white"
+      ],
+      "feature": [
+        "very large bill",
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2633,13 +4338,32 @@ const SPECIES = [
     "safety": "",
     "id": 89,
     "slug": "bateleur",
-    "image": "images/089_bateleur.webp",
+    "image": "images/089_bateleur.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly dark",
+        "orange / red"
+      ],
+      "feature": [
+        "short tail",
+        "red / yellow bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2663,13 +4387,30 @@ const SPECIES = [
     "safety": "",
     "id": 90,
     "slug": "tawny_eagle",
-    "image": "images/090_tawny_eagle.webp",
+    "image": "images/090_tawny_eagle.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "tawny / sandy"
+      ],
+      "feature": [
+        "hooked bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2693,13 +4434,31 @@ const SPECIES = [
     "safety": "",
     "id": 91,
     "slug": "brown_snake_eagle",
-    "image": "images/091_brown_snake_eagle.webp",
+    "image": "images/091_brown_snake_eagle.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "yellow eye",
+        "hooked bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2713,7 +4472,7 @@ const SPECIES = [
       "Okavango"
     ],
     "likelihood": "possible",
-    "size": "medium",
+    "size": "large",
     "pattern": "blackwhite",
     "feature": "barred belly",
     "habitat": "woodland, savanna",
@@ -2723,13 +4482,32 @@ const SPECIES = [
     "safety": "",
     "id": 92,
     "slug": "african_hawk_eagle",
-    "image": "images/092_african_hawk_eagle.webp",
+    "image": "images/092_african_hawk_eagle.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "pattern": [
+        "barred"
+      ],
+      "feature": [
+        "hooked bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2753,13 +4531,30 @@ const SPECIES = [
     "safety": "",
     "id": 93,
     "slug": "lappet_faced_vulture",
-    "image": "images/093_lappet_faced_vulture.webp",
+    "image": "images/093_lappet_faced_vulture.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "bare head / face"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2783,13 +4578,32 @@ const SPECIES = [
     "safety": "",
     "id": 94,
     "slug": "white_backed_vulture",
-    "image": "images/094_white_backed_vulture.webp",
+    "image": "images/094_white_backed_vulture.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "black & white",
+        "mostly white"
+      ],
+      "feature": [
+        "white back"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2813,13 +4627,30 @@ const SPECIES = [
     "safety": "",
     "id": 95,
     "slug": "hooded_vulture",
-    "image": "images/095_hooded_vulture.webp",
+    "image": "images/095_hooded_vulture.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "bare head / face"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2842,13 +4673,32 @@ const SPECIES = [
     "safety": "",
     "id": 96,
     "slug": "grey_crowned_crane",
-    "image": "images/096_grey_crowned_crane.webp",
+    "image": "images/096_grey_crowned_crane.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "grey",
+        "orange / red"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "very long legs"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2871,13 +4721,34 @@ const SPECIES = [
     "safety": "",
     "id": 97,
     "slug": "saddle_billed_stork",
-    "image": "images/097_saddle_billed_stork.webp",
+    "image": "images/097_saddle_billed_stork.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "very large"
+      ],
+      "colour": [
+        "black & white",
+        "orange / red",
+        "yellow"
+      ],
+      "feature": [
+        "red / yellow bill",
+        "very large bill",
+        "very long legs"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2900,13 +4771,31 @@ const SPECIES = [
     "safety": "",
     "id": 98,
     "slug": "african_spoonbill",
-    "image": "images/098_african_spoonbill.webp",
+    "image": "images/098_african_spoonbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "mostly white"
+      ],
+      "feature": [
+        "distinctive bill",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2929,13 +4818,33 @@ const SPECIES = [
     "safety": "",
     "id": 99,
     "slug": "purple_heron",
-    "image": "images/099_purple_heron.webp",
+    "image": "images/099_purple_heron.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "orange / red",
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "very long legs",
+        "long / specialised bill"
+      ],
+      "habitat": [
+        "wetland / marsh"
+      ],
+      "ecology": []
     }
   },
   {
@@ -2959,13 +4868,30 @@ const SPECIES = [
     "safety": "",
     "id": 100,
     "slug": "giant_kingfisher",
-    "image": "images/100_giant_kingfisher.webp",
+    "image": "images/100_giant_kingfisher.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "feature": [
+        "very large bill"
+      ],
+      "habitat": [
+        "permanent water / river",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -2988,13 +4914,31 @@ const SPECIES = [
     "safety": "",
     "id": 101,
     "slug": "southern_carmine_bee_eater",
-    "image": "images/101_southern_carmine_bee_eater.webp",
+    "image": "images/101_southern_carmine_bee_eater.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "orange / red",
+        "blue"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "riverbank / sandbank",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3018,13 +4962,31 @@ const SPECIES = [
     "safety": "",
     "id": 102,
     "slug": "red_billed_hornbill",
-    "image": "images/102_red_billed_hornbill.webp",
+    "image": "images/102_red_billed_hornbill.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "orange / red"
+      ],
+      "feature": [
+        "very large bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3048,13 +5010,30 @@ const SPECIES = [
     "safety": "",
     "id": 103,
     "slug": "fork_tailed_drongo",
-    "image": "images/103_fork_tailed_drongo.webp",
+    "image": "images/103_fork_tailed_drongo.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "mostly dark"
+      ],
+      "feature": [
+        "forked tail"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3068,7 +5047,7 @@ const SPECIES = [
       "Okavango"
     ],
     "likelihood": "likely",
-    "size": "medium",
+    "size": "small",
     "pattern": "blackred",
     "feature": "crimson breast",
     "habitat": "dry woodland",
@@ -3078,13 +5057,31 @@ const SPECIES = [
     "safety": "",
     "id": 104,
     "slug": "crimson_breasted_shrike",
-    "image": "images/104_crimson_breasted_shrike.webp",
+    "image": "images/104_crimson_breasted_shrike.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "mostly dark",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive throat / pouch"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "rocky / dry ground"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3108,13 +5105,30 @@ const SPECIES = [
     "safety": "",
     "id": 105,
     "slug": "acacia_pied_barbet",
-    "image": "images/105_acacia_pied_barbet.webp",
+    "image": "images/105_acacia_pied_barbet.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "feature": [
+        "very large bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3138,13 +5152,30 @@ const SPECIES = [
     "safety": "",
     "id": 106,
     "slug": "yellow_fronted_tinkerbird",
-    "image": "images/106_yellow_fronted_tinkerbird.webp",
+    "image": "images/106_yellow_fronted_tinkerbird.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "green",
+        "yellow"
+      ],
+      "feature": [
+        "colourful face"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3168,13 +5199,31 @@ const SPECIES = [
     "safety": "",
     "id": 107,
     "slug": "african_green_pigeon",
-    "image": "images/107_african_green_pigeon.webp",
+    "image": "images/107_african_green_pigeon.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "green",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3196,13 +5245,30 @@ const SPECIES = [
     "safety": "",
     "id": 108,
     "slug": "brown_headed_parrot",
-    "image": "images/108_brown_headed_parrot.webp",
+    "image": "images/108_brown_headed_parrot.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "green",
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3226,13 +5292,31 @@ const SPECIES = [
     "safety": "",
     "id": 109,
     "slug": "southern_red_bishop",
-    "image": "images/109_southern_red_bishop.webp",
+    "image": "images/109_southern_red_bishop.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "orange / red",
+        "mostly dark"
+      ],
+      "feature": [
+        "facial mask"
+      ],
+      "habitat": [
+        "open grassland / floodplain",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3256,13 +5340,31 @@ const SPECIES = [
     "safety": "",
     "id": 110,
     "slug": "southern_masked_weaver",
-    "image": "images/110_southern_masked_weaver.webp",
+    "image": "images/110_southern_masked_weaver.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "yellow",
+        "mostly dark"
+      ],
+      "feature": [
+        "facial mask"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3286,13 +5388,31 @@ const SPECIES = [
     "safety": "",
     "id": 111,
     "slug": "village_weaver",
-    "image": "images/111_village_weaver.webp",
+    "image": "images/111_village_weaver.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "yellow",
+        "mostly dark"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "wetland / marsh"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3316,13 +5436,30 @@ const SPECIES = [
     "safety": "",
     "id": 112,
     "slug": "red_billed_quelea",
-    "image": "images/112_red_billed_quelea.webp",
+    "image": "images/112_red_billed_quelea.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "orange / red"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3345,13 +5482,30 @@ const SPECIES = [
     "safety": "",
     "id": 113,
     "slug": "black_winged_stilt",
-    "image": "images/113_black_winged_stilt.webp",
+    "image": "images/113_black_winged_stilt.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "black & white"
+      ],
+      "feature": [
+        "very long legs"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "riverbank / sandbank"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3374,13 +5528,34 @@ const SPECIES = [
     "safety": "",
     "id": 114,
     "slug": "three_banded_plover",
-    "image": "images/114_three_banded_plover.webp",
+    "image": "images/114_three_banded_plover.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown",
+        "black & white",
+        "mostly white"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "feature": [
+        "very long legs"
+      ],
+      "habitat": [
+        "riverbank / sandbank",
+        "wetland / marsh"
+      ],
+      "ecology": []
     }
   },
   {
@@ -3403,13 +5578,31 @@ const SPECIES = [
     "safety": "",
     "id": 115,
     "slug": "water_thick_knee",
-    "image": "images/115_water_thick_knee.webp",
+    "image": "images/115_water_thick_knee.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "very large ears",
+        "very large bill"
+      ],
+      "habitat": [
+        "riverbank / sandbank",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3423,7 +5616,7 @@ const SPECIES = [
       "Okavango"
     ],
     "likelihood": "likely",
-    "size": "medium",
+    "size": "small",
     "pattern": "grey",
     "feature": "long tail",
     "habitat": "woodland, savanna",
@@ -3433,13 +5626,31 @@ const SPECIES = [
     "safety": "",
     "id": 116,
     "slug": "red_faced_mousebird",
-    "image": "images/116_red_faced_mousebird.webp",
+    "image": "images/116_red_faced_mousebird.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "grey",
+        "orange / red"
+      ],
+      "feature": [
+        "long tail"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3462,13 +5673,31 @@ const SPECIES = [
     "safety": "",
     "id": 117,
     "slug": "rock_monitor",
-    "image": "images/117_rock_monitor.webp",
+    "image": "images/117_rock_monitor.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "stocky / heavy body",
+        "distinctive tail"
+      ],
+      "habitat": [
+        "rocky / dry ground",
+        "woodland / bush"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3492,13 +5721,32 @@ const SPECIES = [
     "safety": "",
     "id": 118,
     "slug": "flap_necked_chameleon",
-    "image": "images/118_flap_necked_chameleon.webp",
+    "image": "images/118_flap_necked_chameleon.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "green"
+      ],
+      "feature": [
+        "crest / crown / casque",
+        "distinctive eyes"
+      ],
+      "habitat": [
+        "woodland / bush"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3521,13 +5769,32 @@ const SPECIES = [
     "safety": "",
     "id": 119,
     "slug": "helmeted_terrapin",
-    "image": "images/119_helmeted_terrapin.webp",
+    "image": "images/119_helmeted_terrapin.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "domed shell"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "permanent water / river"
+      ],
+      "ecology": [
+        "aquatic / semi-aquatic"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3551,13 +5818,32 @@ const SPECIES = [
     "safety": "",
     "id": 120,
     "slug": "southern_tree_snake",
-    "image": "images/120_southern_tree_snake.webp",
+    "image": "images/120_southern_tree_snake.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "green"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "permanent water / river"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3581,13 +5867,32 @@ const SPECIES = [
     "safety": "",
     "id": 121,
     "slug": "common_egg_eater",
-    "image": "images/121_common_egg_eater.webp",
+    "image": "images/121_common_egg_eater.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "zigzag"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "ecology": []
     }
   },
   {
@@ -3611,13 +5916,30 @@ const SPECIES = [
     "safety": "",
     "id": 122,
     "slug": "african_house_snake",
-    "image": "images/122_african_house_snake.webp",
+    "image": "images/122_african_house_snake.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "long body / snake-like"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "around camps / buildings"
+      ],
+      "pattern": [],
+      "ecology": []
     }
   },
   {
@@ -3640,13 +5962,33 @@ const SPECIES = [
     "safety": "",
     "id": 123,
     "slug": "african_bullfrog",
-    "image": "images/123_african_bullfrog.webp",
+    "image": "images/123_african_bullfrog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "large"
+      ],
+      "colour": [
+        "green",
+        "yellow"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "open grassland / floodplain"
+      ],
+      "ecology": [
+        "burrowing / underground"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3669,13 +6011,32 @@ const SPECIES = [
     "safety": "",
     "id": 124,
     "slug": "painted_reed_frog",
-    "image": "images/124_painted_reed_frog.webp",
+    "image": "images/124_painted_reed_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "green",
+        "orange / red"
+      ],
+      "pattern": [
+        "patchy / irregular markings"
+      ],
+      "habitat": [
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "feature": []
     }
   },
   {
@@ -3699,13 +6060,30 @@ const SPECIES = [
     "safety": "",
     "id": 125,
     "slug": "red_banded_rubber_frog",
-    "image": "images/125_red_banded_rubber_frog.webp",
+    "image": "images/125_red_banded_rubber_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "orange / red"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "open grassland / floodplain"
+      ],
+      "feature": [],
+      "ecology": []
     }
   },
   {
@@ -3728,13 +6106,32 @@ const SPECIES = [
     "safety": "",
     "id": 126,
     "slug": "tremolo_sand_frog",
-    "image": "images/126_tremolo_sand_frog.webp",
+    "image": "images/126_tremolo_sand_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "pattern": [
+        "striped / banded"
+      ],
+      "habitat": [
+        "sandy ground",
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "burrowing / underground"
+      ],
+      "feature": []
     }
   },
   {
@@ -3757,13 +6154,29 @@ const SPECIES = [
     "safety": "",
     "id": 127,
     "slug": "common_caco",
-    "image": "images/127_common_caco.webp",
+    "image": "images/127_common_caco.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [],
+      "habitat": [
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "burrowing / underground"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3786,13 +6199,32 @@ const SPECIES = [
     "safety": "",
     "id": 128,
     "slug": "african_clawed_frog",
-    "image": "images/128_african_clawed_frog.webp",
+    "image": "images/128_african_clawed_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "webbed / splayed feet",
+        "broad / flat body"
+      ],
+      "habitat": [
+        "permanent water / river"
+      ],
+      "ecology": [
+        "aquatic / semi-aquatic"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3815,13 +6247,34 @@ const SPECIES = [
     "safety": "",
     "id": 129,
     "slug": "delicate_reed_frog",
-    "image": "images/129_delicate_reed_frog.webp",
+    "image": "images/129_delicate_reed_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "tiny"
+      ],
+      "colour": [
+        "green",
+        "yellow"
+      ],
+      "pattern": [
+        "patchy / irregular markings"
+      ],
+      "feature": [
+        "distinctive bill"
+      ],
+      "habitat": [
+        "wetland / marsh"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ]
     }
   },
   {
@@ -3845,13 +6298,32 @@ const SPECIES = [
     "safety": "",
     "id": 130,
     "slug": "foam_nest_tree_frog",
-    "image": "images/130_foam_nest_tree_frog.webp",
+    "image": "images/130_foam_nest_tree_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "medium"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "distinctive throat / pouch"
+      ],
+      "habitat": [
+        "wetland / marsh",
+        "woodland / bush"
+      ],
+      "ecology": [
+        "tree-dwelling / arboreal"
+      ],
+      "pattern": []
     }
   },
   {
@@ -3874,13 +6346,32 @@ const SPECIES = [
     "safety": "",
     "id": 131,
     "slug": "bushveld_rain_frog",
-    "image": "images/131_bushveld_rain_frog.webp",
+    "image": "images/131_bushveld_rain_frog.svg",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
       "source": "",
       "license": "",
       "note": "Local fallback plate. A species photograph should be bundled here before field use."
+    },
+    "identification": {
+      "size": [
+        "small"
+      ],
+      "colour": [
+        "brown / grey-brown"
+      ],
+      "feature": [
+        "stocky / heavy body"
+      ],
+      "habitat": [
+        "woodland / bush",
+        "sandy ground"
+      ],
+      "ecology": [
+        "burrowing / underground"
+      ],
+      "pattern": []
     }
   }
 ];

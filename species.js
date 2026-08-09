@@ -701,7 +701,7 @@ const SPECIES = [
     "safety": "",
     "id": 24,
     "slug": "common_genet",
-    "image": "images/024_common_genet.svg",
+    "image": "images/024_common_genet.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -731,7 +731,7 @@ const SPECIES = [
     "safety": "",
     "id": 25,
     "slug": "large_spotted_genet",
-    "image": "images/025_large_spotted_genet.svg",
+    "image": "images/025_large_spotted_genet.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -760,7 +760,7 @@ const SPECIES = [
     "safety": "",
     "id": 26,
     "slug": "selous_mongoose",
-    "image": "images/026_selous_mongoose.svg",
+    "image": "images/026_selous_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -790,7 +790,7 @@ const SPECIES = [
     "safety": "",
     "id": 27,
     "slug": "banded_mongoose",
-    "image": "images/027_banded_mongoose.svg",
+    "image": "images/027_banded_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -820,7 +820,7 @@ const SPECIES = [
     "safety": "",
     "id": 28,
     "slug": "vervet_monkey",
-    "image": "images/028_vervet_monkey.svg",
+    "image": "images/028_vervet_monkey.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -850,7 +850,7 @@ const SPECIES = [
     "safety": "",
     "id": 29,
     "slug": "chacma_baboon",
-    "image": "images/029_chacma_baboon.svg",
+    "image": "images/029_chacma_baboon.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -880,7 +880,7 @@ const SPECIES = [
     "safety": "",
     "id": 30,
     "slug": "southern_african_porcupine",
-    "image": "images/030_southern_african_porcupine.svg",
+    "image": "images/030_southern_african_porcupine.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -910,7 +910,7 @@ const SPECIES = [
     "safety": "",
     "id": 31,
     "slug": "cape_hare",
-    "image": "images/031_cape_hare.svg",
+    "image": "images/031_cape_hare.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -940,7 +940,7 @@ const SPECIES = [
     "safety": "",
     "id": 32,
     "slug": "african_fish_eagle",
-    "image": "images/032_african_fish_eagle.svg",
+    "image": "images/032_african_fish_eagle.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -969,7 +969,7 @@ const SPECIES = [
     "safety": "",
     "id": 33,
     "slug": "african_jacana",
-    "image": "images/033_african_jacana.svg",
+    "image": "images/033_african_jacana.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -997,7 +997,7 @@ const SPECIES = [
     "safety": "",
     "id": 34,
     "slug": "african_skimmer",
-    "image": "images/034_african_skimmer.svg",
+    "image": "images/034_african_skimmer.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1027,7 +1027,7 @@ const SPECIES = [
     "safety": "",
     "id": 35,
     "slug": "southern_ground_hornbill",
-    "image": "images/035_southern_ground_hornbill.svg",
+    "image": "images/035_southern_ground_hornbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1057,7 +1057,7 @@ const SPECIES = [
     "safety": "",
     "id": 36,
     "slug": "southern_yellow_billed_hornbill",
-    "image": "images/036_southern_yellow_billed_hornbill.svg",
+    "image": "images/036_southern_yellow_billed_hornbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1087,7 +1087,7 @@ const SPECIES = [
     "safety": "",
     "id": 37,
     "slug": "african_grey_hornbill",
-    "image": "images/037_african_grey_hornbill.svg",
+    "image": "images/037_african_grey_hornbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1117,7 +1117,7 @@ const SPECIES = [
     "safety": "",
     "id": 38,
     "slug": "lilac_breasted_roller",
-    "image": "images/038_lilac_breasted_roller.svg",
+    "image": "images/038_lilac_breasted_roller.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1147,7 +1147,7 @@ const SPECIES = [
     "safety": "",
     "id": 39,
     "slug": "crowned_lapwing",
-    "image": "images/039_crowned_lapwing.svg",
+    "image": "images/039_crowned_lapwing.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1177,7 +1177,7 @@ const SPECIES = [
     "safety": "",
     "id": 40,
     "slug": "wattled_lapwing",
-    "image": "images/040_wattled_lapwing.svg",
+    "image": "images/040_wattled_lapwing.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1206,7 +1206,7 @@ const SPECIES = [
     "safety": "",
     "id": 41,
     "slug": "african_openbill",
-    "image": "images/041_african_openbill.svg",
+    "image": "images/041_african_openbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1236,7 +1236,7 @@ const SPECIES = [
     "safety": "",
     "id": 42,
     "slug": "marabou_stork",
-    "image": "images/042_marabou_stork.svg",
+    "image": "images/042_marabou_stork.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1265,7 +1265,7 @@ const SPECIES = [
     "safety": "",
     "id": 43,
     "slug": "yellow_billed_stork",
-    "image": "images/043_yellow_billed_stork.svg",
+    "image": "images/043_yellow_billed_stork.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1295,7 +1295,7 @@ const SPECIES = [
     "safety": "",
     "id": 44,
     "slug": "african_woolly_necked_stork",
-    "image": "images/044_african_woolly_necked_stork.svg",
+    "image": "images/044_african_woolly_necked_stork.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1325,7 +1325,7 @@ const SPECIES = [
     "safety": "",
     "id": 45,
     "slug": "hamerkop",
-    "image": "images/045_hamerkop.svg",
+    "image": "images/045_hamerkop.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1355,7 +1355,7 @@ const SPECIES = [
     "safety": "",
     "id": 46,
     "slug": "goliath_heron",
-    "image": "images/046_goliath_heron.svg",
+    "image": "images/046_goliath_heron.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1384,7 +1384,7 @@ const SPECIES = [
     "safety": "",
     "id": 47,
     "slug": "african_darter",
-    "image": "images/047_african_darter.svg",
+    "image": "images/047_african_darter.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1414,7 +1414,7 @@ const SPECIES = [
     "safety": "",
     "id": 48,
     "slug": "great_white_egret",
-    "image": "images/048_great_white_egret.svg",
+    "image": "images/048_great_white_egret.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1444,7 +1444,7 @@ const SPECIES = [
     "safety": "",
     "id": 49,
     "slug": "hadada_ibis",
-    "image": "images/049_hadada_ibis.svg",
+    "image": "images/049_hadada_ibis.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1473,7 +1473,7 @@ const SPECIES = [
     "safety": "",
     "id": 50,
     "slug": "glossy_ibis",
-    "image": "images/050_glossy_ibis.svg",
+    "image": "images/050_glossy_ibis.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1503,7 +1503,7 @@ const SPECIES = [
     "safety": "",
     "id": 51,
     "slug": "african_sacred_ibis",
-    "image": "images/051_african_sacred_ibis.svg",
+    "image": "images/051_african_sacred_ibis.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1533,7 +1533,7 @@ const SPECIES = [
     "safety": "",
     "id": 52,
     "slug": "helmeted_guineafowl",
-    "image": "images/052_helmeted_guineafowl.svg",
+    "image": "images/052_helmeted_guineafowl.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1563,7 +1563,7 @@ const SPECIES = [
     "safety": "",
     "id": 53,
     "slug": "crested_francolin",
-    "image": "images/053_crested_francolin.svg",
+    "image": "images/053_crested_francolin.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1592,7 +1592,7 @@ const SPECIES = [
     "safety": "",
     "id": 54,
     "slug": "natal_spurfowl",
-    "image": "images/054_natal_spurfowl.svg",
+    "image": "images/054_natal_spurfowl.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1621,7 +1621,7 @@ const SPECIES = [
     "safety": "",
     "id": 55,
     "slug": "kori_bustard",
-    "image": "images/055_kori_bustard.svg",
+    "image": "images/055_kori_bustard.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1651,7 +1651,7 @@ const SPECIES = [
     "safety": "",
     "id": 56,
     "slug": "african_paradise_flycatcher",
-    "image": "images/056_african_paradise_flycatcher.svg",
+    "image": "images/056_african_paradise_flycatcher.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1681,7 +1681,7 @@ const SPECIES = [
     "safety": "",
     "id": 57,
     "slug": "southern_red_billed_hornbill",
-    "image": "images/057_southern_red_billed_hornbill.svg",
+    "image": "images/057_southern_red_billed_hornbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1710,7 +1710,7 @@ const SPECIES = [
     "safety": "",
     "id": 58,
     "slug": "meyers_parrot",
-    "image": "images/058_meyers_parrot.svg",
+    "image": "images/058_meyers_parrot.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1740,7 +1740,7 @@ const SPECIES = [
     "safety": "",
     "id": 59,
     "slug": "grey_go_away_bird",
-    "image": "images/059_grey_go_away_bird.svg",
+    "image": "images/059_grey_go_away_bird.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1770,7 +1770,7 @@ const SPECIES = [
     "safety": "",
     "id": 60,
     "slug": "burchells_starling",
-    "image": "images/060_burchells_starling.svg",
+    "image": "images/060_burchells_starling.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1800,7 +1800,7 @@ const SPECIES = [
     "safety": "",
     "id": 61,
     "slug": "cape_starling",
-    "image": "images/061_cape_starling.svg",
+    "image": "images/061_cape_starling.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1830,7 +1830,7 @@ const SPECIES = [
     "safety": "",
     "id": 62,
     "slug": "african_hoopoe",
-    "image": "images/062_african_hoopoe.svg",
+    "image": "images/062_african_hoopoe.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1860,7 +1860,7 @@ const SPECIES = [
     "safety": "",
     "id": 63,
     "slug": "woodland_kingfisher",
-    "image": "images/063_woodland_kingfisher.svg",
+    "image": "images/063_woodland_kingfisher.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1890,7 +1890,7 @@ const SPECIES = [
     "safety": "",
     "id": 64,
     "slug": "pied_kingfisher",
-    "image": "images/064_pied_kingfisher.svg",
+    "image": "images/064_pied_kingfisher.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1919,7 +1919,7 @@ const SPECIES = [
     "safety": "",
     "id": 65,
     "slug": "malachite_kingfisher",
-    "image": "images/065_malachite_kingfisher.svg",
+    "image": "images/065_malachite_kingfisher.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1949,7 +1949,7 @@ const SPECIES = [
     "safety": "",
     "id": 66,
     "slug": "white_fronted_bee_eater",
-    "image": "images/066_white_fronted_bee_eater.svg",
+    "image": "images/066_white_fronted_bee_eater.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -1979,7 +1979,7 @@ const SPECIES = [
     "safety": "",
     "id": 67,
     "slug": "little_bee_eater",
-    "image": "images/067_little_bee_eater.svg",
+    "image": "images/067_little_bee_eater.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2009,7 +2009,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 68,
     "slug": "nile_crocodile",
-    "image": "images/068_nile_crocodile.svg",
+    "image": "images/068_nile_crocodile.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2039,7 +2039,7 @@ const SPECIES = [
     "safety": "",
     "id": 69,
     "slug": "nile_monitor",
-    "image": "images/069_nile_monitor.svg",
+    "image": "images/069_nile_monitor.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2069,7 +2069,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 70,
     "slug": "southern_rock_python",
-    "image": "images/070_southern_rock_python.svg",
+    "image": "images/070_southern_rock_python.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2099,7 +2099,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 71,
     "slug": "mozambique_spitting_cobra",
-    "image": "images/071_mozambique_spitting_cobra.svg",
+    "image": "images/071_mozambique_spitting_cobra.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2129,7 +2129,7 @@ const SPECIES = [
     "safety": "Observe from the vehicle and never approach or handle the animal.",
     "id": 72,
     "slug": "black_mamba",
-    "image": "images/072_black_mamba.svg",
+    "image": "images/072_black_mamba.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2159,7 +2159,7 @@ const SPECIES = [
     "safety": "",
     "id": 73,
     "slug": "southern_tree_agama",
-    "image": "images/073_southern_tree_agama.svg",
+    "image": "images/073_southern_tree_agama.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2189,7 +2189,7 @@ const SPECIES = [
     "safety": "",
     "id": 74,
     "slug": "leopard_tortoise",
-    "image": "images/074_leopard_tortoise.svg",
+    "image": "images/074_leopard_tortoise.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2219,7 +2219,7 @@ const SPECIES = [
     "safety": "",
     "id": 75,
     "slug": "african_wildcat",
-    "image": "images/075_african_wildcat.svg",
+    "image": "images/075_african_wildcat.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2248,7 +2248,7 @@ const SPECIES = [
     "safety": "",
     "id": 76,
     "slug": "common_springbok",
-    "image": "images/076_common_springbok.svg",
+    "image": "images/076_common_springbok.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2278,7 +2278,7 @@ const SPECIES = [
     "safety": "",
     "id": 77,
     "slug": "southern_bushbuck",
-    "image": "images/077_southern_bushbuck.svg",
+    "image": "images/077_southern_bushbuck.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2306,7 +2306,7 @@ const SPECIES = [
     "safety": "",
     "id": 78,
     "slug": "sharpe_s_grysbok",
-    "image": "images/078_sharpe_s_grysbok.svg",
+    "image": "images/078_sharpe_s_grysbok.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2335,7 +2335,7 @@ const SPECIES = [
     "safety": "",
     "id": 79,
     "slug": "yellow_mongoose",
-    "image": "images/079_yellow_mongoose.svg",
+    "image": "images/079_yellow_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2365,7 +2365,7 @@ const SPECIES = [
     "safety": "",
     "id": 80,
     "slug": "white_tailed_mongoose",
-    "image": "images/080_white_tailed_mongoose.svg",
+    "image": "images/080_white_tailed_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2395,7 +2395,7 @@ const SPECIES = [
     "safety": "",
     "id": 81,
     "slug": "african_civet",
-    "image": "images/081_african_civet.svg",
+    "image": "images/081_african_civet.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2425,7 +2425,7 @@ const SPECIES = [
     "safety": "",
     "id": 82,
     "slug": "common_slender_mongoose",
-    "image": "images/082_common_slender_mongoose.svg",
+    "image": "images/082_common_slender_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2455,7 +2455,7 @@ const SPECIES = [
     "safety": "",
     "id": 83,
     "slug": "dwarf_mongoose",
-    "image": "images/083_dwarf_mongoose.svg",
+    "image": "images/083_dwarf_mongoose.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2485,7 +2485,7 @@ const SPECIES = [
     "safety": "Give it space; it can be defensive.",
     "id": 84,
     "slug": "honey_badger",
-    "image": "images/084_honey_badger.svg",
+    "image": "images/084_honey_badger.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2514,7 +2514,7 @@ const SPECIES = [
     "safety": "",
     "id": 85,
     "slug": "serval",
-    "image": "images/085_serval.svg",
+    "image": "images/085_serval.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2544,7 +2544,7 @@ const SPECIES = [
     "safety": "",
     "id": 86,
     "slug": "caracal",
-    "image": "images/086_caracal.svg",
+    "image": "images/086_caracal.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2573,7 +2573,7 @@ const SPECIES = [
     "safety": "",
     "id": 87,
     "slug": "bat_eared_fox",
-    "image": "images/087_bat_eared_fox.svg",
+    "image": "images/087_bat_eared_fox.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2603,7 +2603,7 @@ const SPECIES = [
     "safety": "",
     "id": 88,
     "slug": "martial_eagle",
-    "image": "images/088_martial_eagle.svg",
+    "image": "images/088_martial_eagle.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2633,7 +2633,7 @@ const SPECIES = [
     "safety": "",
     "id": 89,
     "slug": "bateleur",
-    "image": "images/089_bateleur.svg",
+    "image": "images/089_bateleur.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2663,7 +2663,7 @@ const SPECIES = [
     "safety": "",
     "id": 90,
     "slug": "tawny_eagle",
-    "image": "images/090_tawny_eagle.svg",
+    "image": "images/090_tawny_eagle.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2693,7 +2693,7 @@ const SPECIES = [
     "safety": "",
     "id": 91,
     "slug": "brown_snake_eagle",
-    "image": "images/091_brown_snake_eagle.svg",
+    "image": "images/091_brown_snake_eagle.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2723,7 +2723,7 @@ const SPECIES = [
     "safety": "",
     "id": 92,
     "slug": "african_hawk_eagle",
-    "image": "images/092_african_hawk_eagle.svg",
+    "image": "images/092_african_hawk_eagle.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2753,7 +2753,7 @@ const SPECIES = [
     "safety": "",
     "id": 93,
     "slug": "lappet_faced_vulture",
-    "image": "images/093_lappet_faced_vulture.svg",
+    "image": "images/093_lappet_faced_vulture.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2783,7 +2783,7 @@ const SPECIES = [
     "safety": "",
     "id": 94,
     "slug": "white_backed_vulture",
-    "image": "images/094_white_backed_vulture.svg",
+    "image": "images/094_white_backed_vulture.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2813,7 +2813,7 @@ const SPECIES = [
     "safety": "",
     "id": 95,
     "slug": "hooded_vulture",
-    "image": "images/095_hooded_vulture.svg",
+    "image": "images/095_hooded_vulture.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2842,7 +2842,7 @@ const SPECIES = [
     "safety": "",
     "id": 96,
     "slug": "grey_crowned_crane",
-    "image": "images/096_grey_crowned_crane.svg",
+    "image": "images/096_grey_crowned_crane.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2871,7 +2871,7 @@ const SPECIES = [
     "safety": "",
     "id": 97,
     "slug": "saddle_billed_stork",
-    "image": "images/097_saddle_billed_stork.svg",
+    "image": "images/097_saddle_billed_stork.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2900,7 +2900,7 @@ const SPECIES = [
     "safety": "",
     "id": 98,
     "slug": "african_spoonbill",
-    "image": "images/098_african_spoonbill.svg",
+    "image": "images/098_african_spoonbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2929,7 +2929,7 @@ const SPECIES = [
     "safety": "",
     "id": 99,
     "slug": "purple_heron",
-    "image": "images/099_purple_heron.svg",
+    "image": "images/099_purple_heron.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2959,7 +2959,7 @@ const SPECIES = [
     "safety": "",
     "id": 100,
     "slug": "giant_kingfisher",
-    "image": "images/100_giant_kingfisher.svg",
+    "image": "images/100_giant_kingfisher.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -2988,7 +2988,7 @@ const SPECIES = [
     "safety": "",
     "id": 101,
     "slug": "southern_carmine_bee_eater",
-    "image": "images/101_southern_carmine_bee_eater.svg",
+    "image": "images/101_southern_carmine_bee_eater.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3018,7 +3018,7 @@ const SPECIES = [
     "safety": "",
     "id": 102,
     "slug": "red_billed_hornbill",
-    "image": "images/102_red_billed_hornbill.svg",
+    "image": "images/102_red_billed_hornbill.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3048,7 +3048,7 @@ const SPECIES = [
     "safety": "",
     "id": 103,
     "slug": "fork_tailed_drongo",
-    "image": "images/103_fork_tailed_drongo.svg",
+    "image": "images/103_fork_tailed_drongo.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3078,7 +3078,7 @@ const SPECIES = [
     "safety": "",
     "id": 104,
     "slug": "crimson_breasted_shrike",
-    "image": "images/104_crimson_breasted_shrike.svg",
+    "image": "images/104_crimson_breasted_shrike.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3108,7 +3108,7 @@ const SPECIES = [
     "safety": "",
     "id": 105,
     "slug": "acacia_pied_barbet",
-    "image": "images/105_acacia_pied_barbet.svg",
+    "image": "images/105_acacia_pied_barbet.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3138,7 +3138,7 @@ const SPECIES = [
     "safety": "",
     "id": 106,
     "slug": "yellow_fronted_tinkerbird",
-    "image": "images/106_yellow_fronted_tinkerbird.svg",
+    "image": "images/106_yellow_fronted_tinkerbird.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3168,7 +3168,7 @@ const SPECIES = [
     "safety": "",
     "id": 107,
     "slug": "african_green_pigeon",
-    "image": "images/107_african_green_pigeon.svg",
+    "image": "images/107_african_green_pigeon.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3196,7 +3196,7 @@ const SPECIES = [
     "safety": "",
     "id": 108,
     "slug": "brown_headed_parrot",
-    "image": "images/108_brown_headed_parrot.svg",
+    "image": "images/108_brown_headed_parrot.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3226,7 +3226,7 @@ const SPECIES = [
     "safety": "",
     "id": 109,
     "slug": "southern_red_bishop",
-    "image": "images/109_southern_red_bishop.svg",
+    "image": "images/109_southern_red_bishop.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3256,7 +3256,7 @@ const SPECIES = [
     "safety": "",
     "id": 110,
     "slug": "southern_masked_weaver",
-    "image": "images/110_southern_masked_weaver.svg",
+    "image": "images/110_southern_masked_weaver.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3286,7 +3286,7 @@ const SPECIES = [
     "safety": "",
     "id": 111,
     "slug": "village_weaver",
-    "image": "images/111_village_weaver.svg",
+    "image": "images/111_village_weaver.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3316,7 +3316,7 @@ const SPECIES = [
     "safety": "",
     "id": 112,
     "slug": "red_billed_quelea",
-    "image": "images/112_red_billed_quelea.svg",
+    "image": "images/112_red_billed_quelea.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3345,7 +3345,7 @@ const SPECIES = [
     "safety": "",
     "id": 113,
     "slug": "black_winged_stilt",
-    "image": "images/113_black_winged_stilt.svg",
+    "image": "images/113_black_winged_stilt.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3374,7 +3374,7 @@ const SPECIES = [
     "safety": "",
     "id": 114,
     "slug": "three_banded_plover",
-    "image": "images/114_three_banded_plover.svg",
+    "image": "images/114_three_banded_plover.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3403,7 +3403,7 @@ const SPECIES = [
     "safety": "",
     "id": 115,
     "slug": "water_thick_knee",
-    "image": "images/115_water_thick_knee.svg",
+    "image": "images/115_water_thick_knee.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3433,7 +3433,7 @@ const SPECIES = [
     "safety": "",
     "id": 116,
     "slug": "red_faced_mousebird",
-    "image": "images/116_red_faced_mousebird.svg",
+    "image": "images/116_red_faced_mousebird.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3462,7 +3462,7 @@ const SPECIES = [
     "safety": "",
     "id": 117,
     "slug": "rock_monitor",
-    "image": "images/117_rock_monitor.svg",
+    "image": "images/117_rock_monitor.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3492,7 +3492,7 @@ const SPECIES = [
     "safety": "",
     "id": 118,
     "slug": "flap_necked_chameleon",
-    "image": "images/118_flap_necked_chameleon.svg",
+    "image": "images/118_flap_necked_chameleon.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3521,7 +3521,7 @@ const SPECIES = [
     "safety": "",
     "id": 119,
     "slug": "helmeted_terrapin",
-    "image": "images/119_helmeted_terrapin.svg",
+    "image": "images/119_helmeted_terrapin.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3551,7 +3551,7 @@ const SPECIES = [
     "safety": "",
     "id": 120,
     "slug": "southern_tree_snake",
-    "image": "images/120_southern_tree_snake.svg",
+    "image": "images/120_southern_tree_snake.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3581,7 +3581,7 @@ const SPECIES = [
     "safety": "",
     "id": 121,
     "slug": "common_egg_eater",
-    "image": "images/121_common_egg_eater.svg",
+    "image": "images/121_common_egg_eater.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3611,7 +3611,7 @@ const SPECIES = [
     "safety": "",
     "id": 122,
     "slug": "african_house_snake",
-    "image": "images/122_african_house_snake.svg",
+    "image": "images/122_african_house_snake.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3640,7 +3640,7 @@ const SPECIES = [
     "safety": "",
     "id": 123,
     "slug": "african_bullfrog",
-    "image": "images/123_african_bullfrog.svg",
+    "image": "images/123_african_bullfrog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3669,7 +3669,7 @@ const SPECIES = [
     "safety": "",
     "id": 124,
     "slug": "painted_reed_frog",
-    "image": "images/124_painted_reed_frog.svg",
+    "image": "images/124_painted_reed_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3699,7 +3699,7 @@ const SPECIES = [
     "safety": "",
     "id": 125,
     "slug": "red_banded_rubber_frog",
-    "image": "images/125_red_banded_rubber_frog.svg",
+    "image": "images/125_red_banded_rubber_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3728,7 +3728,7 @@ const SPECIES = [
     "safety": "",
     "id": 126,
     "slug": "tremolo_sand_frog",
-    "image": "images/126_tremolo_sand_frog.svg",
+    "image": "images/126_tremolo_sand_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3757,7 +3757,7 @@ const SPECIES = [
     "safety": "",
     "id": 127,
     "slug": "common_caco",
-    "image": "images/127_common_caco.svg",
+    "image": "images/127_common_caco.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3786,7 +3786,7 @@ const SPECIES = [
     "safety": "",
     "id": 128,
     "slug": "african_clawed_frog",
-    "image": "images/128_african_clawed_frog.svg",
+    "image": "images/128_african_clawed_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3815,7 +3815,7 @@ const SPECIES = [
     "safety": "",
     "id": 129,
     "slug": "delicate_reed_frog",
-    "image": "images/129_delicate_reed_frog.svg",
+    "image": "images/129_delicate_reed_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3845,7 +3845,7 @@ const SPECIES = [
     "safety": "",
     "id": 130,
     "slug": "foam_nest_tree_frog",
-    "image": "images/130_foam_nest_tree_frog.svg",
+    "image": "images/130_foam_nest_tree_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",
@@ -3874,7 +3874,7 @@ const SPECIES = [
     "safety": "",
     "id": 131,
     "slug": "bushveld_rain_frog",
-    "image": "images/131_bushveld_rain_frog.svg",
+    "image": "images/131_bushveld_rain_frog.webp",
     "photo": {
       "status": "local-placeholder",
       "photographer": "",

@@ -1,1 +1,25 @@
-{"name":"Safari Wildlife Guide","short_name":"Safari Guide","start_url":"./","display":"standalone","background_color":"#f5f2ea","theme_color":"#263b2d","description":"Offline wildlife identification guide for Victoria Falls, Chobe, Khwai and the Okavango Delta","icons":[{"src":"icons/icon-180.svg","sizes":"180x180","type":"image/svg+xml"}]}
+{
+  "name": "Safari Wildlife Guide",
+  "short_name": "Safari Guide",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f0e6",
+  "theme_color": "#263b2d",
+  "description": "Offline-first wildlife field guide for Victoria Falls, Chobe, Khwai and the Okavango Delta.",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

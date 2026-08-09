@@ -1,0 +1,134 @@
+# Photo credits and image status
+
+This build contains local fallback plates for every species. They are intentionally labelled as local fallback images and do not claim to be photographs.
+- **African Elephant** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Buffalo** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Lion** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Leopard** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Cheetah** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Wild Dog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Spotted Hyena** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Brown Hyena** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Giraffe** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Hippopotamus** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Warthog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Eland** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Greater Kudu** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Waterbuck** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Red Lechwe** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Tsessebe** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Impala** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Duiker** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Steenbok** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Reedbuck** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Sable Antelope** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Roan Antelope** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Bushbuck** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Genet** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Large-spotted Genet** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Selous Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Banded Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Vervet Monkey** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Chacma Baboon** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern African Porcupine** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Cape Hare** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Fish Eagle** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Jacana** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Skimmer** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Ground Hornbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Yellow-billed Hornbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Grey Hornbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Lilac-breasted Roller** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Crowned Lapwing** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Wattled Lapwing** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Openbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Marabou Stork** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Yellow-billed Stork** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Woolly-necked Stork** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Hamerkop** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Goliath Heron** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Darter** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Great White Egret** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Hadada Ibis** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Glossy Ibis** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Sacred Ibis** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Helmeted Guineafowl** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Crested Francolin** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Natal Spurfowl** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Kori Bustard** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Paradise Flycatcher** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Red-billed Hornbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Meyers Parrot** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Grey Go-away-bird** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Burchell’s Starling** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Cape Starling** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Hoopoe** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Woodland Kingfisher** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Pied Kingfisher** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Malachite Kingfisher** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **White-fronted Bee-eater** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Little Bee-eater** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Nile Crocodile** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Nile Monitor** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Rock Python** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Mozambique Spitting Cobra** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Black Mamba** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Tree Agama** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Leopard Tortoise** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Wildcat** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Springbok** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Bushbuck** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Sharpe's Grysbok** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Yellow Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **White-tailed Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Civet** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Slender Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Dwarf Mongoose** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Honey Badger** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Serval** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Caracal** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Bat-eared Fox** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Martial Eagle** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Bateleur** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Tawny Eagle** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Brown Snake Eagle** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Hawk-Eagle** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Lappet-faced Vulture** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **White-backed Vulture** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Hooded Vulture** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Grey Crowned Crane** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Saddle-billed Stork** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Spoonbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Purple Heron** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Giant Kingfisher** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Carmine Bee-eater** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Red-billed Hornbill** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Fork-tailed Drongo** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Crimson-breasted Shrike** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Acacia Pied Barbet** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Yellow-fronted Tinkerbird** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Green Pigeon** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Brown-headed Parrot** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Red Bishop** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Masked Weaver** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Village Weaver** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Red-billed Quelea** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Black-winged Stilt** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Three-banded Plover** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Water Thick-knee** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Red-faced Mousebird** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Rock Monitor** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Flap-necked Chameleon** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Helmeted Terrapin** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Southern Tree Snake** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Egg-eater** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African House Snake** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Bullfrog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Painted Reed Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Red-banded Rubber Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Tremolo Sand Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Common Caco** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **African Clawed Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Delicate Reed Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Foam-nest Tree Frog** — local fallback plate; photographer/source/licence: not supplied in this build.
+- **Bushveld Rain Frog** — local fallback plate; photographer/source/licence: not supplied in this build.

@@ -1,0 +1,132 @@
+ID,Name,Scientific Name
+1,African Elephant,Loxodonta africana
+2,African Buffalo,Syncerus caffer
+3,Lion,Panthera leo
+4,Leopard,Panthera pardus
+5,Cheetah,Acinonyx jubatus
+6,African Wild Dog,Lycaon pictus
+7,Spotted Hyena,Crocuta crocuta
+8,Brown Hyena,Parahyaena brunnea
+9,Giraffe,Giraffa giraffa
+10,Common Hippopotamus,Hippopotamus amphibius
+11,Common Warthog,Phacochoerus africanus
+12,Common Eland,Tragelaphus oryx
+13,Greater Kudu,Tragelaphus strepsiceros
+14,Waterbuck,Kobus ellipsiprymnus
+15,Red Lechwe,Kobus leche
+16,Tsessebe,Damaliscus lunatus
+17,Impala,Aepyceros melampus
+18,Common Duiker,Sylvicapra grimmia
+19,Steenbok,Raphicerus campestris
+20,Southern Reedbuck,Redunca arundinum
+21,Sable Antelope,Hippotragus niger
+22,Roan Antelope,Hippotragus equinus
+23,African Bushbuck,Tragelaphus scriptus
+24,Common Genet,Genetta genetta
+25,Large-spotted Genet,Genetta maculata
+26,Selous Mongoose,Paracynictis selousi
+27,Banded Mongoose,Mungos mungo
+28,Vervet Monkey,Chlorocebus pygerythrus
+29,Chacma Baboon,Papio ursinus
+30,Southern African Porcupine,Hystrix africaeaustralis
+31,Cape Hare,Lepus capensis
+32,African Fish Eagle,Haliaeetus vocifer
+33,African Jacana,Actophilornis africanus
+34,African Skimmer,Rynchops flavirostris
+35,Southern Ground Hornbill,Bucorvus leadbeateri
+36,Southern Yellow-billed Hornbill,Tockus leucomelas
+37,African Grey Hornbill,Lophoceros nasutus
+38,Lilac-breasted Roller,Coracias caudatus
+39,Crowned Lapwing,Vanellus coronatus
+40,Wattled Lapwing,Vanellus senegallus
+41,African Openbill,Anastomus lamelligerus
+42,Marabou Stork,Leptoptilos crumenifer
+43,Yellow-billed Stork,Mycteria ibis
+44,African Woolly-necked Stork,Ciconia microscelis
+45,Hamerkop,Scopus umbretta
+46,Goliath Heron,Ardea goliath
+47,African Darter,Anhinga rufa
+48,Great White Egret,Ardea alba
+49,Hadada Ibis,Bostrychia hagedash
+50,Glossy Ibis,Plegadis falcinellus
+51,African Sacred Ibis,Threskiornis aethiopicus
+52,Helmeted Guineafowl,Numida meleagris
+53,Crested Francolin,Ortygornis sephaena
+54,Natal Spurfowl,Pternistis natalensis
+55,Kori Bustard,Ardeotis kori
+56,African Paradise Flycatcher,Terpsiphone viridis
+57,Southern Red-billed Hornbill,Tockus rufirostris
+58,Meyers Parrot,Poicephalus meyeri
+59,Grey Go-away-bird,Corythaixoides concolor
+60,Burchell's Starling,Lamprotornis australis
+61,Cape Starling,Lamprotornis nitens
+62,African Hoopoe,Upupa africana
+63,Woodland Kingfisher,Halcyon senegalensis
+64,Pied Kingfisher,Ceryle rudis
+65,Malachite Kingfisher,Corythornis cristatus
+66,White-fronted Bee-eater,Merops bullockoides
+67,Little Bee-eater,Merops pusillus
+68,Nile Crocodile,Crocodylus niloticus
+69,Nile Monitor,Varanus niloticus
+70,Southern Rock Python,Python natalensis
+71,Mozambique Spitting Cobra,Naja mossambica
+72,Black Mamba,Dendroaspis polylepis
+73,Southern Tree Agama,Acanthocercus atricollis
+74,Leopard Tortoise,Stigmochelys pardalis
+75,African Wildcat,Felis lybica
+76,Common Springbok,Antidorcas marsupialis
+77,Southern Bushbuck,Tragelaphus sylvaticus
+78,Sharpe's Grysbok,Raphicerus sharpei
+79,Yellow Mongoose,Cynictis penicillata
+80,White-tailed Mongoose,Ichneumia albicauda
+81,African Civet,Civettictis civetta
+82,Common Slender Mongoose,Herpestes sanguineus
+83,Dwarf Mongoose,Helogale parvula
+84,Honey Badger,Mellivora capensis
+85,Serval,Leptailurus serval
+86,Caracal,Caracal caracal
+87,Bat-eared Fox,Otocyon megalotis
+88,Martial Eagle,Polemaetus bellicosus
+89,Bateleur,Terathopius ecaudatus
+90,Tawny Eagle,Aquila rapax
+91,Brown Snake Eagle,Circaetus cinereus
+92,African Hawk-Eagle,Aquila spilogaster
+93,Lappet-faced Vulture,Torgos tracheliotos
+94,White-backed Vulture,Gyps africanus
+95,Hooded Vulture,Necrosyrtes monachus
+96,Grey Crowned Crane,Balearica regulorum
+97,Saddle-billed Stork,Ephippiorhynchus senegalensis
+98,African Spoonbill,Platalea alba
+99,Purple Heron,Ardea purpurea
+100,Giant Kingfisher,Megaceryle maxima
+101,Southern Carmine Bee-eater,Merops nubicus
+102,Red-billed Hornbill,Tockus erythrorhynchus
+103,Fork-tailed Drongo,Dicrurus adsimilis
+104,Crimson-breasted Shrike,Laniarius atrococcineus
+105,Acacia Pied Barbet,Tricholaema leucomelas
+106,Yellow-fronted Tinkerbird,Pogoniulus chrysoconus
+107,African Green Pigeon,Treron calvus
+108,Brown-headed Parrot,Poicephalus cryptoxanthus
+109,Southern Red Bishop,Euplectes orix
+110,Southern Masked Weaver,Ploceus velatus
+111,Village Weaver,Ploceus cucullatus
+112,Red-billed Quelea,Quelea quelea
+113,Black-winged Stilt,Himantopus himantopus
+114,Three-banded Plover,Charadrius tricollaris
+115,Water Thick-knee,Burhinus vermiculatus
+116,Red-faced Mousebird,Urocolius indicus
+117,Rock Monitor,Varanus albigularis
+118,Flap-necked Chameleon,Chamaeleo dilepis
+119,Helmeted Terrapin,Pelomedusa subrufa
+120,Southern Tree Snake,Philothamnus natalensis
+121,Common Egg-eater,Dasypeltis scabra
+122,African House Snake,Boaedon fuliginosus
+123,African Bullfrog,Pyxicephalus adspersus
+124,Painted Reed Frog,Hyperolius marmoratus
+125,Red-banded Rubber Frog,Phrynomantis bifasciatus
+126,Tremolo Sand Frog,Tomopterna cryptotis
+127,Common Caco,Cacosternum boettgeri
+128,African Clawed Frog,Xenopus laevis
+129,Delicate Reed Frog,Hyperolius pusillus
+130,Foam-nest Tree Frog,Chiromantis xerampelina
+131,Bushveld Rain Frog,Breviceps adspersus

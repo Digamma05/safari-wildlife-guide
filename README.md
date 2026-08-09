@@ -1,11 +1,16 @@
 # Safari Wildlife Guide
 
-Mobile-first offline PWA for Victoria Falls, Chobe, Khwai and the Okavango Delta.
+Offline-first personal field guide for Victoria Falls, Chobe, Khwai and the Okavango Delta.
 
-## Important
-The bundled images are local field-guide illustrations/placeholders, not claimed wildlife photographs. Replace them with properly licensed photographs using the same filenames in `images/` if you want photographic images.
+## Photos
+Species photos are fetched from Wikimedia/Wikipedia while online and cached locally. The app is intended for personal use. Photo/source links are shown on species pages where available.
 
-## iPhone installation
-A PWA/service worker requires HTTPS. Upload this folder to an HTTPS static host (GitHub Pages, Cloudflare Pages, Netlify, Vercel, etc.), open it in Safari, choose Share → Add to Home Screen. Open it online once and press **Prepare for Offline Use**. Then test with Airplane Mode.
+## Offline use
+1. Host on HTTPS (e.g. GitHub Pages).
+2. Open in Safari on iPhone.
+3. Add to Home Screen.
+4. While online, press **Prepare offline** and wait for all photos to cache.
+5. Test in Airplane Mode before travelling.
 
-The Seen/Not Seen checklist is stored in localStorage on the phone.
+## Notes
+This guide focuses on common and notable safari wildlife rather than literally every species in the region. Exact local occurrence and likelihood are approximate and can vary seasonally.

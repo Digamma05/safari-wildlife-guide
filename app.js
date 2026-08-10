@@ -33,6 +33,62 @@ const $$ = (s,root=document)=>[...root.querySelectorAll(s)];
 const places = ['All','Victoria Falls','Chobe','Khwai','Okavango'];
 const groups = [['All','All'],['mammal','Mammals'],['bird','Birds'],['reptile','Reptiles'],['amphibian','Amphibians']];
 const seenKey='safariSeenV4';
+const OFFLINE_DB='safariWildlifeOffline';
+const OFFLINE_DB_VERSION=1;
+const OFFLINE_STORE='assets';
+const OFFLINE_CACHE='safari-guide-v5';
+const OFFLINE_META='safari-offline-meta-v1';
+const offlineImageUrls=new Map();
+let offlineDbPromise=null;
+
+function openOfflineDB(){
+  if(offlineDbPromise)return offlineDbPromise;
+  offlineDbPromise=new Promise((resolve,reject)=>{
+    if(!('indexedDB' in window)){reject(new Error('IndexedDB unavailable'));return;}
+    const req=indexedDB.open(OFFLINE_DB,OFFLINE_DB_VERSION);
+    req.onupgradeneeded=()=>{
+      const db=req.result;
+      if(!db.objectStoreNames.contains(OFFLINE_STORE)) db.createObjectStore(OFFLINE_STORE,{keyPath:'url'});
+    };
+    req.onsuccess=()=>resolve(req.result);
+    req.onerror=()=>reject(req.error||new Error('Could not open offline database'));
+  });
+  return offlineDbPromise;
+}
+async function putOfflineAsset(url,blob){
+  const db=await openOfflineDB();
+  return new Promise((resolve,reject)=>{
+    const tx=db.transaction(OFFLINE_STORE,'readwrite');
+    tx.objectStore(OFFLINE_STORE).put({url,blob,savedAt:Date.now()});
+    tx.oncomplete=resolve; tx.onerror=()=>reject(tx.error);
+  });
+}
+async function getOfflineAsset(url){
+  try{
+    const db=await openOfflineDB();
+    return await new Promise((resolve,reject)=>{
+      const tx=db.transaction(OFFLINE_STORE,'readonly');
+      const req=tx.objectStore(OFFLINE_STORE).get(url);
+      req.onsuccess=()=>resolve(req.result?.blob||null);
+      req.onerror=()=>reject(req.error);
+    });
+  }catch{return null}
+}
+async function setOfflineMeta(meta){
+  try{localStorage.setItem(OFFLINE_META,JSON.stringify(meta));}catch{}
+}
+function getOfflineMeta(){try{return JSON.parse(localStorage.getItem(OFFLINE_META)||'null')}catch{return null}}
+async function hydrateOfflineImages(){
+  if(!getOfflineMeta()?.ready)return;
+  await Promise.all(SPECIES.map(async s=>{
+    const blob=await getOfflineAsset(s.image);
+    if(blob){
+      const url=URL.createObjectURL(blob);
+      offlineImageUrls.set(s.image,url);
+    }
+  }));
+}
+function revokeOfflineImageUrls(){for(const url of offlineImageUrls.values())URL.revokeObjectURL(url);offlineImageUrls.clear();}
 let route=location.hash.slice(1)||'home';
 let place='All', group='All', query='';
 
@@ -44,7 +100,7 @@ const pct=(a,b)=>b?Math.round(a/b*100):0;
 
 function groupLabel(g){return ({mammal:'Mammal',bird:'Bird',reptile:'Reptile',amphibian:'Amphibian'})[g]||g}
 function locationLabel(p){return p==='All'?'All locations':p}
-function speciesImage(s){return s.image}
+function speciesImage(s){return offlineImageUrls.get(s.image)||s.image}
 function card(s){
   const seen=isSeen(s.id);
   return `<article class="species-card" data-id="${s.id}">
@@ -349,50 +405,104 @@ function renderIdentify(){
 }
 function identify(){renderIdentify();}
 function settings(){
-  const prepared=localStorage.getItem('offlinePrepared')==='1';
+  const meta=getOfflineMeta();
+  const ready=!!meta?.ready;
+  const online=navigator.onLine;
   view.innerHTML=`<section class="hero"><div class="eyebrow">OFFLINE & ABOUT</div><h2>Prepare for safari</h2>
-    <p>All app code and the current ${SPECIES.length} local image assets are bundled in this project. Use the button below while online to warm the browser cache, then test in Airplane Mode.</p>
-    <div class="offline-box"><div id="offline-detail">${prepared?'✓ Offline preparation recorded.':'○ Offline preparation not yet confirmed.'}</div><div id="offline-count" class="muted"></div></div>
-    <button class="bigbtn" id="prepareOffline">Prepare for Offline Use</button>
+    <p>Download and verify the complete guide while online. The app stores the application assets and all ${SPECIES.length} species photographs locally, so normal use does not depend on internet connectivity.</p>
+    <div class="offline-box"><div id="offline-detail">${ready?'✓ Safari Mode ready':'○ Safari Mode not prepared'}</div><div id="offline-count" class="muted">${meta?`${meta.images||0}/${SPECIES.length} photographs verified · ${meta.checkedAt?new Date(meta.checkedAt).toLocaleString():''}`:'No offline package verified yet.'}</div></div>
+    <div class="row"><button class="bigbtn" id="prepareOffline">${ready?'Verify / update offline package':'Download for Offline Use'}</button><button class="bigbtn secondary" id="verifyOffline">Verify now</button></div>
   </section>
-  <section class="section"><h2>Photo credits</h2><p class="muted">This delivered build uses clearly labelled local fallback plates because licensed source photographs could not be technically downloaded into the project environment during build. No runtime image URLs are used.</p>
-  <p><b>Important:</b> replace the fallback plates with licensed photographs before relying on the app as a finished photographic field guide. The species records already include a photo-credit structure for photographer, source and licence.</p></section>
-  <section class="section"><h2>Technical status</h2><ul class="checklist"><li>✓ No external API calls in app code</li><li>✓ Species data is local</li><li>✓ Images are local assets</li><li>✓ Sightings use localStorage</li><li>✓ Service worker cache includes core files and images</li><li>✓ Identification uses ranked fuzzy matching</li><li>✓ ${SPECIES.length} species in the local database</li></ul></section>`;
+  <section class="section"><h2>Safari Mode</h2><p class="muted">When ready, the guide can be used in Airplane Mode. Going online again is safe: the local package remains available and the app can be updated when you choose.</p>
+    <div class="checklist"><div>Network: <b>${online?'Available':'Offline'}</b></div><div>Local database: <b>${'IndexedDB' in window?'Available':'Unavailable'}</b></div><div>Offline package: <b>${ready?'Verified':'Not verified'}</b></div><div>Sightings: <b>Stored locally</b></div></div>
+  </section>
+  <section class="section"><h2>Photo credits</h2><p class="muted">The offline system stores the project's local image files. Keep your licensed WebP photographs in the existing <code>images/</code> directory and preserve the species image paths.</p></section>`;
   $('#prepareOffline').onclick=prepareOffline;
+  $('#verifyOffline').onclick=verifyOffline;
 }
+
+function offlineAssetList(){
+  const core=['./','./index.html','./styles.css','./app.js','./species.js','./manifest.json','./service-worker.js'];
+  const icons=['./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png'];
+  return [...new Set([...core,...icons,...SPECIES.map(s=>`./${s.image}`)])];
+}
+
+async function fetchAndStoreAsset(asset){
+  const response=await fetch(asset,{cache:'no-store'});
+  if(!response.ok)throw new Error(`${response.status} ${response.statusText}`);
+  const blob=await response.blob();
+  await putOfflineAsset(asset,blob);
+  return blob;
+}
+
 async function prepareOffline(){
   const btn=$('#prepareOffline'); if(!btn)return;
-  if(!window.isSecureContext && location.hostname!=='localhost'){alert('GitHub Pages uses HTTPS. Open this app from HTTPS before preparing offline.');return}
-  btn.disabled=true;btn.textContent='Preparing…';
-  const assets=['./','./index.html','./styles.css','./app.js','./species.js','./manifest.json','./service-worker.js','./icons/icon-180.png','./icons/icon-192.png','./icons/icon-512.png',...SPECIES.map(s=>`./${s.image}`)];
-  const failures=[];
+  if(!window.isSecureContext && location.hostname!=='localhost'){
+    alert('Open the app from HTTPS (for example GitHub Pages) before preparing offline.');return;
+  }
+  if(!navigator.onLine){alert('Connect to the internet first so the complete offline package can be downloaded and verified.');return;}
+  btn.disabled=true;btn.textContent='Downloading…';
+  const assets=offlineAssetList(), failures=[]; let done=0;
   try{
-    if('serviceWorker' in navigator) await navigator.serviceWorker.register('service-worker.js');
-    const cache=await caches.open('safari-guide-v3');
-    let done=0;
+    if('serviceWorker' in navigator){
+      const reg=await navigator.serviceWorker.register('./service-worker.js');
+      await navigator.serviceWorker.ready;
+      if(reg.active) reg.active.postMessage({type:'SET_CACHE_VERSION',version:OFFLINE_CACHE});
+    }
+    const cache=await caches.open(OFFLINE_CACHE);
     for(const asset of assets){
-      try{await cache.add(asset);done++;$('#offline-count').textContent=`Caching ${done}/${assets.length} assets…`}
-      catch(e){failures.push(asset)}
+      try{
+        const blob=await fetchAndStoreAsset(asset);
+        await cache.put(asset,new Response(blob,{headers:{'Content-Type':blob.type||'application/octet-stream'}}));
+        done++;
+        const el=$('#offline-count');if(el)el.textContent=`Downloading ${done}/${assets.length} assets…`;
+      }catch(e){failures.push(`${asset} — ${e.message||e}`)}
     }
     const missing=[];
-    for(const asset of assets){if(!await cache.match(asset))missing.push(asset)}
-    const allBad=[...new Set([...failures,...missing])];
-    if(allBad.length){
-      localStorage.removeItem('offlinePrepared');
-      $('#offline-detail').innerHTML=`✕ Offline preparation incomplete`;
-      $('#offline-count').textContent=`${allBad.length} assets failed. First failure: ${allBad[0]}`;
+    for(const asset of assets){
+      const blob=await getOfflineAsset(asset); const cached=await cache.match(asset);
+      if(!blob||!cached)missing.push(asset);
+    }
+    const imageCount=SPECIES.filter(s=>offlineImageUrls.has(s.image)).length;
+    if(failures.length||missing.length){
+      localStorage.removeItem(OFFLINE_META);
+      $('#offline-detail').innerHTML='✕ Offline package incomplete';
+      $('#offline-count').textContent=`${failures.length+missing.length} assets failed verification. First: ${(failures[0]||missing[0]||'unknown')}`;
       btn.disabled=false;btn.textContent='Try again';return;
     }
-    localStorage.setItem('offlinePrepared','1');
-    $('#offline-detail').innerHTML=`✓ Offline ready`;
-    $('#offline-count').textContent=`${SPECIES.length} species · ${SPECIES.length} local images · ${assets.length} essential assets cached`;
-    btn.textContent='Offline ready';
-    $('#status').textContent='Offline ready';
+    const meta={ready:true,images:SPECIES.length,assets:assets.length,checkedAt:Date.now(),cache:OFFLINE_CACHE};
+    await setOfflineMeta(meta);
+    await hydrateOfflineImages();
+    $('#offline-detail').innerHTML='✓ Safari Mode ready';
+    $('#offline-count').textContent=`${SPECIES.length}/${SPECIES.length} photographs verified · ${assets.length} assets stored locally`;
+    btn.textContent='Offline package verified';
+    updateStatus();
   }catch(e){
-    $('#offline-detail').innerHTML=`✕ Could not prepare offline cache`;
+    $('#offline-detail').innerHTML='✕ Could not prepare offline package';
     $('#offline-count').textContent=String(e.message||e);
     btn.disabled=false;btn.textContent='Try again';
   }
+}
+
+async function verifyOffline(){
+  const detail=$('#offline-detail'),count=$('#offline-count'); if(!detail)return;
+  detail.textContent='Checking local package…';
+  const assets=offlineAssetList(); let ok=0,missing=[];
+  for(const asset of assets){
+    const blob=await getOfflineAsset(asset); const cached=await caches.match(asset);
+    if(blob&&cached)ok++;else missing.push(asset);
+  }
+  if(missing.length){
+    detail.textContent='✕ Offline package needs attention';
+    count.textContent=`${ok}/${assets.length} assets verified. Missing: ${missing[0]}`;
+    localStorage.removeItem(OFFLINE_META);
+  }else{
+    await setOfflineMeta({ready:true,images:SPECIES.length,assets:assets.length,checkedAt:Date.now(),cache:OFFLINE_CACHE});
+    await hydrateOfflineImages();
+    detail.textContent='✓ Safari Mode ready';
+    count.textContent=`${SPECIES.length}/${SPECIES.length} photographs verified · ${assets.length} assets stored locally`;
+  }
+  updateStatus();
 }
 function render(){
   if(route==='home')home();
@@ -406,8 +516,8 @@ function render(){
 }
 function updateStatus(){
   const s=$('#status'); if(!s)return;
-  const ready=localStorage.getItem('offlinePrepared')==='1';
-  s.textContent=navigator.onLine?(ready?'Offline ready':'Online'):'Offline';
+  const ready=!!getOfflineMeta()?.ready;
+  s.textContent=navigator.onLine?(ready?'Safari Mode ready':'Online'):(ready?'Safari Mode · Offline':'Offline');
 }
 function navigate(r){route=r;location.hash=r;render();}
 document.addEventListener('click',e=>{
@@ -450,8 +560,9 @@ document.addEventListener('input',e=>{
 });
 window.addEventListener('hashchange',()=>{route=location.hash.slice(1)||'home';render()});
 window.addEventListener('online',updateStatus); window.addEventListener('offline',updateStatus);
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',async()=>{
   $('#offlineBtn').onclick=()=>navigate('about');
-  if('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch(()=>{});
+  if('serviceWorker' in navigator) navigator.serviceWorker.register('./service-worker.js').catch(()=>{});
+  await hydrateOfflineImages();
   render();
 });

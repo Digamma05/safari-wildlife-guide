@@ -8,24 +8,37 @@ const ID_STYLE=`
 .id-category-head h3{margin:0 0 3px}
 .id-category-head p{margin:0;color:#6c756e;font-size:12px}
 .id-options{display:flex;flex-wrap:wrap;gap:8px}
-.id-option{background:#f3f1ea;color:#334038;border:1px solid #d7d4ca;border-radius:11px;padding:11px 13px;font-size:14px;font-weight:600}
+.id-option{background:#f3f1ea;color:#334038;border:1px solid #d7d4ca;border-radius:11px;padding:11px 13px;font-size:14px;font-weight:600;min-height:44px}
 .id-option.selected{background:#2f6448;color:#fff;border-color:#2f6448}
 .id-results-section{margin-top:16px}
-.id-result{cursor:pointer;display:grid;grid-template-columns:32px 78px 1fr;gap:12px;align-items:center}
-.id-result img{width:78px;height:68px;object-fit:cover;border-radius:9px}
-.id-result-body{min-width:0}
-.result-top{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
-.result-top h3{margin:0}
-.match-label{font-size:11px;white-space:nowrap;border-radius:999px;padding:5px 8px;background:#e8efe5;color:#31573f;font-weight:700}
-.match-meter{height:5px;background:#e3e0d7;border-radius:5px;overflow:hidden;margin-top:8px}
+.id-result{position:relative;display:grid;grid-template-columns:96px minmax(0,1fr);gap:12px;align-items:start;padding:12px;min-width:0;overflow:hidden}
+.id-result img{grid-column:1;width:96px;height:96px;display:block;object-fit:cover;object-position:center;border-radius:12px;background:#e4e1d8}
+.id-result-body{grid-column:2;min-width:0;overflow:hidden}
+.id-result .rank{position:absolute;z-index:2;top:18px;left:18px;min-width:26px;padding:4px 6px;border-radius:999px;background:#263b2d;color:#fff;text-align:center;font-size:11px;font-weight:800;box-shadow:0 2px 6px #0003}
+.result-top{display:block;min-width:0}
+.result-top h3{margin:0;line-height:1.18;overflow-wrap:anywhere}
+.result-top .muted{margin:3px 0 0;line-height:1.25;overflow-wrap:anywhere}
+.match-label{display:inline-block;margin-top:7px;font-size:11px;white-space:normal;line-height:1.2;border-radius:999px;padding:5px 8px;background:#e8efe5;color:#31573f;font-weight:700}
+.id-result-body>p{margin:8px 0 0;line-height:1.4;font-size:13px;overflow-wrap:anywhere}
+.match-meter{height:5px;background:#e3e0d7;border-radius:5px;overflow:hidden;margin-top:9px}
 .match-meter span{display:block;height:100%;background:#5f856a;border-radius:5px}
 @media(max-width:600px){
- .id-option{font-size:13px;padding:10px 11px}
- .id-result{grid-template-columns:26px 68px 1fr;gap:9px}
- .id-result img{width:68px;height:60px}
- .match-label{font-size:10px}
+ .id-category{padding:14px}
+ .id-option{font-size:13px;padding:10px 11px;min-height:46px}
+ .id-result{grid-template-columns:82px minmax(0,1fr);gap:10px;padding:10px}
+ .id-result img{width:82px;height:82px;border-radius:10px}
+ .id-result .rank{top:15px;left:15px;min-width:24px;padding:3px 5px}
+ .id-result-body>p{font-size:12px;line-height:1.35}
+ .result-top h3{font-size:16px}
+ .result-top .muted{font-size:12px}
 }
-`;
+@media(max-width:360px){
+ .id-result{grid-template-columns:72px minmax(0,1fr);gap:9px}
+ .id-result img{width:72px;height:72px}
+ .id-result .rank{top:14px;left:14px}
+ .id-result-body>p{font-size:11.5px}
+}
+`
 if(!document.getElementById('id-overhaul-style')){const st=document.createElement('style');st.id='id-overhaul-style';st.textContent=ID_STYLE;document.head.appendChild(st);}
 const $ = (s,root=document)=>root.querySelector(s);
 const view = document.querySelector('#view');
@@ -185,7 +198,7 @@ function detail(id){
   const seen=isSeen(s.id);
   view.innerHTML=`<button class="back" data-route="browse">← Back to species</button>
   <article class="detail">
-    <div class="detail-photo"><img src="${esc(s.image)}" alt="${esc(s.name)}"><span class="photo-badge">Local image</span></div>
+    <div class="detail-photo"><img src="${esc(speciesImage(s))}" alt="${esc(s.name)}"><span class="photo-badge">Local image</span></div>
     <div class="detail-body">
       <div class="eyebrow small">${groupLabel(s.group)} · ${esc(s.likelihood)}</div>
       <div class="detail-title-row"><div><h2>${esc(s.name)}</h2><p class="muted scientific"><i>${esc(s.scientific)}</i></p></div>

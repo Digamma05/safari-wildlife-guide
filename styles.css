@@ -45,3 +45,79 @@
  .id-result .rank{top:14px;left:14px}
  .id-result-body>p{font-size:11.5px}
 }
+
+/* Final iPhone portrait treatment for identification results */
+@media (orientation: portrait) and (max-width: 600px) {
+  .id-results-section .result-list { display:flex; flex-direction:column; gap:12px; }
+  .id-results-section .id-result {
+    display:grid !important;
+    grid-template-columns: 96px minmax(0, 1fr) !important;
+    grid-template-rows:auto auto !important;
+    gap:10px 12px !important;
+    align-items:start !important;
+    width:100%;
+    padding:10px !important;
+    overflow:hidden;
+  }
+  .id-results-section .id-result img {
+    grid-column:1 !important;
+    grid-row:1 / span 2 !important;
+    width:96px !important;
+    height:96px !important;
+    aspect-ratio:1 / 1 !important;
+    object-fit:cover !important;
+    border-radius:10px !important;
+  }
+  .id-results-section .id-result-body {
+    grid-column:2 !important;
+    grid-row:1 / span 2 !important;
+    min-width:0 !important;
+    overflow:visible !important;
+  }
+  .id-results-section .result-top h3 {
+    font-size:16px !important;
+    line-height:1.2 !important;
+    margin:0 !important;
+    overflow-wrap:anywhere !important;
+    word-break:normal !important;
+  }
+  .id-results-section .result-top .muted {
+    font-size:11.5px !important;
+    line-height:1.25 !important;
+    margin:3px 0 0 !important;
+    overflow-wrap:anywhere !important;
+  }
+  .id-results-section .match-label {
+    margin-top:6px !important;
+    max-width:100% !important;
+    white-space:normal !important;
+  }
+  .id-results-section .id-result-body > p {
+    font-size:12px !important;
+    line-height:1.35 !important;
+    margin:7px 0 0 !important;
+    overflow-wrap:anywhere !important;
+  }
+  .id-results-section .match-meter { margin-top:8px !important; }
+  .id-results-section .id-result .rank {
+    top:15px !important;
+    left:15px !important;
+    min-width:23px !important;
+    padding:3px 5px !important;
+    font-size:10px !important;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 380px) {
+  .id-results-section .id-result {
+    grid-template-columns:78px minmax(0, 1fr) !important;
+    gap:9px !important;
+  }
+  .id-results-section .id-result img {
+    width:78px !important;
+    height:78px !important;
+  }
+  .id-results-section .result-top h3 { font-size:15px !important; }
+  .id-results-section .result-top .muted { font-size:11px !important; }
+  .id-results-section .id-result-body > p { font-size:11.5px !important; }
+}
